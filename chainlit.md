@@ -31,8 +31,8 @@ When 10+ colleges are found, the system activates advanced search:
   - Examples: "Universities in Pacific region", "Small liberal arts colleges", "Strong engineering programs"
 - **Hybrid Search**: Combines semantic search with your categorized colleges
 - **Iterative Refinement**:
-  - 10-15 colleges → Option to refine further or proceed
-  - 15+ colleges → Must provide additional criteria to narrow down
+  - 10-12 colleges → Option to refine further or proceed
+  - 12+ colleges → Must provide additional criteria to narrow down
 - **Search Failure Recovery**: If no results found, restore previous state and ask for different criteria
 
 **5. Clarifying Questions & Personalization** ✨
