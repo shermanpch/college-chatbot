@@ -54,6 +54,13 @@ Complete pipeline for scraping and processing comprehensive university data from
 ## 🚀 Installation & Setup
 
 Install the required dependencies:
+
+**1. Install the main project as an editable package** (required for `projectutils` imports):
+```bash
+pip install -e .
+```
+
+**2. Install the scraper-specific dependencies**:
 ```bash
 pip install -r data/scripts/scraper/requirements.txt
 ```
