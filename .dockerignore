@@ -4,7 +4,6 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-.env
 .env.*
 .venv/
 env/
@@ -20,14 +19,10 @@ venv.bak/
 *.log
 logs/
 
-# EDA files and reports if not needed at runtime
-eda/
+# Files not needed for runtime
 chatbot/evaluation/
-chatbot/test/
-
-# Notebooks if not needed
-notebooks/
-*.ipynb
+data/scripts/
+data/external/
 
 # Temporary files
 *.tmp
