@@ -10,6 +10,7 @@ The application has been containerized with Docker and includes:
 - Student dataset and RAG documents
 - Custom CSS styling
 - All necessary Python dependencies
+- Integrated reverse proxy setup for production deployment with custom domains
 
 ## Prerequisites
 
@@ -109,6 +110,21 @@ You'll need an OpenRouter API key to run the application. Sign up at [OpenRouter
    ```
 
 4. **Access your application at:** `http://localhost:8000`
+
+### Production Deployment with Custom Domain (Linux only)
+
+For production deployment with a custom domain and SSL certificates:
+
+1. **Set up your environment file and deploy:**
+   ```bash
+   cp example.env .env
+   nano .env  # Add your API keys
+   ./deploy.sh --deploy-with-proxy
+   ```
+
+2. **Follow the prompts to configure your domain and SSL certificates**
+
+3. **Access your application at:** `https://your-domain.com`
 
 For detailed setup instructions, continue reading below.
 
@@ -230,6 +246,9 @@ The `deploy.ps1` script provides convenient commands for container management:
 # Stop the container
 .\deploy.ps1 -Stop
 
+# Deploy app and show reverse proxy info
+.\deploy.ps1 -DeployWithProxy
+
 # Get help and see all options
 .\deploy.ps1 -Help
 ```
@@ -249,6 +268,9 @@ The `deploy.sh` script provides convenient commands for container management:
 
 # Stop the container
 ./deploy.sh --stop
+
+# Deploy app and setup reverse proxy (Linux only)
+./deploy.sh --deploy-with-proxy
 
 # Get help and see all options
 ./deploy.sh --help
@@ -493,12 +515,138 @@ docker run -d -p 8000:8000 \
   college-chatbot
 ```
 
+## Production Deployment with Reverse Proxy
+
+### Overview
+
+For production deployment with a custom domain, the project includes integrated reverse proxy setup using Nginx with SSL certificates from Let's Encrypt.
+
+### Prerequisites for Production
+
+1. **Linux Server**: Ubuntu 20.04+ or Debian 10+ recommended
+2. **Domain Name**: A registered domain pointing to your server's IP address
+3. **Root Access**: Sudo privileges on your server
+4. **Open Ports**: Ports 80, 443, and 8000 accessible
+
+### Quick Production Setup
+
+**Step 1: Configure DNS**
+Point your domain to your server's IP address:
+- `yourdomain.com` → your_server_ip
+- `www.yourdomain.com` → your_server_ip
+
+**Step 2: Deploy with Reverse Proxy**
+```bash
+# Upload all files to your server
+# Set up environment
+cp example.env .env
+nano .env  # Add your API keys, domain, and email
+
+# Required variables for production:
+# OPENROUTER_API_KEY=your_api_key
+# OPENROUTER_SELF_RETRIEVAL_MODEL=openai/gpt-4o-mini
+# DOMAIN=your-domain.com
+# SSL_EMAIL=your-email@example.com
+
+# Deploy with integrated reverse proxy setup
+./deploy.sh --deploy-with-proxy
+```
+
+**Step 3: Follow Prompts**
+The script will:
+- Deploy your Docker container
+- Install and configure Nginx
+- Obtain SSL certificates from Let's Encrypt
+- Set up automatic certificate renewal
+- Configure security headers and firewall
+
+### Manual Reverse Proxy Setup
+
+If you prefer to set up the reverse proxy separately after deployment:
+
+```bash
+# First deploy your application
+./deploy.sh
+
+# Then setup reverse proxy manually
+sudo ./setup-reverse-proxy.sh
+```
+
+### Reverse Proxy Features
+
+The integrated reverse proxy setup provides:
+- **SSL/HTTPS**: Free SSL certificates from Let's Encrypt
+- **Auto-renewal**: Certificates automatically renew before expiration
+- **Security Headers**: Protection against common web attacks
+- **WebSocket Support**: Full support for Chainlit's real-time features
+- **Health Checks**: Built-in health monitoring endpoint
+- **Firewall Configuration**: Automatic UFW firewall setup
+
+### Domain Configuration
+
+Edit the domain settings in `setup-reverse-proxy.sh`:
+```bash
+# Configuration
+DOMAIN="your-domain.com"
+WWW_DOMAIN="www.your-domain.com"
+APP_PORT="8000"
+EMAIL="your-email@example.com"
+```
+
+### Platform Support
+
+- **Linux**: Full reverse proxy support with automated setup
+- **Windows**: Development only - use Linux server for production
+- **macOS**: Development only - use Linux server for production
+
+### Troubleshooting Production Issues
+
+**502 Bad Gateway**
+```bash
+# Check if app is running
+docker ps
+curl http://localhost:8000
+
+# Restart if needed
+./deploy.sh
+```
+
+**SSL Certificate Issues**
+```bash
+# Check DNS propagation
+dig your-domain.com
+
+# Test certificate renewal
+sudo certbot renew --dry-run
+```
+
+**Nginx Issues**
+```bash
+# Check Nginx status
+sudo systemctl status nginx
+
+# View error logs
+sudo tail -f /var/log/nginx/error.log
+
+# Test configuration
+sudo nginx -t
+```
+
+### Files for Production Deployment
+
+The following files are included for production deployment:
+- `setup-reverse-proxy.sh` - Automated reverse proxy setup script
+- `REVERSE_PROXY_SETUP.md` - Detailed reverse proxy documentation
+- Updated `deploy.sh` with `--setup-proxy` and `--deploy-with-proxy` options
+- Updated `deploy.ps1` with proxy information for Windows users
+
 ## Support
 
 If you encounter issues:
 1. Check the container logs first: `docker logs college-chatbot-container`
 2. Verify all prerequisites are met (Docker installed, API key set)
 3. Ensure data files are present and accessible
-4. Check platform-specific troubleshooting section above
+4. For production issues, check `REVERSE_PROXY_SETUP.md` for detailed troubleshooting
+5. Check platform-specific troubleshooting section above
 
 The Docker setup is designed to be self-contained and should work out of the box once the API key and model are provided.

@@ -5,7 +5,8 @@ param(
     [switch]$Help,
     [switch]$Logs,
     [switch]$Stop,
-    [switch]$Status
+    [switch]$Status,
+    [switch]$DeployWithProxy
 )
 
 # Configuration
@@ -236,16 +237,42 @@ function Start-Deployment {
     Write-Success "Deployment completed successfully!"
 }
 
+# Function to show reverse proxy information (Windows note)
+function Show-ReverseProxyInfo {
+    Write-Warning "Reverse proxy setup is designed for Linux servers."
+    Write-Host ""
+    Write-Host "For Windows development:"
+    Write-Host "  - Use the application directly at http://localhost:8000"
+    Write-Host "  - For production deployment, use a Linux server with ./deploy.sh --deploy-with-proxy"
+    Write-Host ""
+    Write-Host "For production deployment on Linux:"
+    Write-Host "  1. Deploy your application to a Linux server (Ubuntu/Debian recommended)"
+    Write-Host "  2. Upload all project files to your server"
+    Write-Host "  3. Configure your .env file with domain and email:"
+    Write-Host "     DOMAIN=your-domain.com"
+    Write-Host "     SSL_EMAIL=your-email@example.com"
+    Write-Host "  4. Run: ./deploy.sh --deploy-with-proxy"
+    Write-Host ""
+    Write-Host "This will deploy your app and automatically setup:"
+    Write-Host "  - Nginx reverse proxy"
+    Write-Host "  - SSL certificates from Let's Encrypt"
+    Write-Host "  - Automatic certificate renewal"
+    Write-Host "  - Security headers and firewall configuration"
+    Write-Host ""
+    Write-Warning "Windows reverse proxy setup is not supported by this script."
+}
+
 # Show help
 function Show-Help {
     Write-Host "College Chatbot - Docker Deployment Script"
     Write-Host ""
     Write-Host "Usage:"
-    Write-Host "  .\deploy.ps1                - Deploy the application"
-    Write-Host "  .\deploy.ps1 -Help          - Show this help message"
-    Write-Host "  .\deploy.ps1 -Logs          - Show container logs"
-    Write-Host "  .\deploy.ps1 -Stop          - Stop the container"
-    Write-Host "  .\deploy.ps1 -Status        - Show container status"
+    Write-Host "  .\deploy.ps1                     - Deploy the application"
+    Write-Host "  .\deploy.ps1 -Help               - Show this help message"
+    Write-Host "  .\deploy.ps1 -Logs               - Show container logs"
+    Write-Host "  .\deploy.ps1 -Stop               - Stop the container"
+    Write-Host "  .\deploy.ps1 -Status             - Show container status"
+    Write-Host "  .\deploy.ps1 -DeployWithProxy    - Deploy app and show proxy info"
     Write-Host ""
     Write-Host "Environment Setup:"
     Write-Host "  This script requires a .env file with your API credentials."
@@ -260,6 +287,12 @@ function Show-Help {
     Write-Host "  2. Edit .env with your API credentials"
     Write-Host "  3. Run the deployment script:"
     Write-Host "     .\deploy.ps1"
+    Write-Host ""
+    Write-Host "Production Deployment:"
+    Write-Host "  For production with custom domain and SSL:"
+    Write-Host "  - Use a Linux server (Ubuntu/Debian recommended)"
+    Write-Host "  - Use the setup-reverse-proxy.sh script on your server"
+    Write-Host "  - See REVERSE_PROXY_SETUP.md for detailed instructions"
     Write-Host ""
     Write-Host "Note: Make sure Docker Desktop is running before executing this script."
 }
@@ -293,6 +326,12 @@ elseif ($Stop) {
 }
 elseif ($Status) {
     Show-Status
+    exit 0
+}
+elseif ($DeployWithProxy) {
+    Start-Deployment
+    Write-Host ""
+    Show-ReverseProxyInfo
     exit 0
 }
 else {
