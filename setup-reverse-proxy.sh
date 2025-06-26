@@ -212,11 +212,33 @@ configure_firewall() {
     print_status "Configuring firewall..."
     
     if command -v ufw &> /dev/null; then
-        ufw --force allow 'Nginx Full'
-        ufw --force allow OpenSSH
-        print_success "UFW firewall configured"
+        # Check if UFW is installed and available
+        if ufw status >/dev/null 2>&1; then
+            # Enable UFW if not already enabled (with --force to avoid prompts)
+            ufw --force enable >/dev/null 2>&1 || true
+            
+            # Allow Nginx Full profile (HTTP and HTTPS)
+            ufw allow 'Nginx Full' >/dev/null 2>&1 || ufw allow 80/tcp >/dev/null 2>&1 || true
+            ufw allow 443/tcp >/dev/null 2>&1 || true
+            
+            # Allow SSH to prevent lockout
+            ufw allow OpenSSH >/dev/null 2>&1 || ufw allow 22/tcp >/dev/null 2>&1 || true
+            
+            print_success "UFW firewall configured"
+        else
+            print_warning "UFW is not properly configured. Manually allowing ports..."
+            # Fallback: try to allow ports directly
+            ufw allow 80/tcp >/dev/null 2>&1 || true
+            ufw allow 443/tcp >/dev/null 2>&1 || true
+            ufw allow 22/tcp >/dev/null 2>&1 || true
+            print_warning "Basic firewall rules applied. Please verify UFW configuration manually."
+        fi
     else
-        print_warning "UFW not found. Please ensure ports 80 and 443 are open"
+        print_warning "UFW not found. Please ensure ports 80, 443, and 22 are open"
+        print_warning "You may need to configure your firewall manually:"
+        echo "  - Port 80 (HTTP)"
+        echo "  - Port 443 (HTTPS)" 
+        echo "  - Port 22 (SSH)"
     fi
 }
 

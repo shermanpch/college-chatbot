@@ -277,12 +277,27 @@ setup_reverse_proxy() {
         exit 1
     fi
     
+    # Make the script executable
+    chmod +x setup-reverse-proxy.sh
+    
     if [ "$EUID" -eq 0 ]; then
         print_status "Running reverse proxy setup as root..."
-        ./setup-reverse-proxy.sh
+        if ./setup-reverse-proxy.sh; then
+            print_success "Reverse proxy setup completed successfully"
+        else
+            print_error "Reverse proxy setup failed. Check the logs above for details."
+            print_warning "You can try running the setup manually with: sudo ./setup-reverse-proxy.sh"
+            exit 1
+        fi
     else
         print_status "Running reverse proxy setup with sudo..."
-        sudo ./setup-reverse-proxy.sh
+        if sudo ./setup-reverse-proxy.sh; then
+            print_success "Reverse proxy setup completed successfully"
+        else
+            print_error "Reverse proxy setup failed. Check the logs above for details."
+            print_warning "You can try running the setup manually with: sudo ./setup-reverse-proxy.sh"
+            exit 1
+        fi
     fi
 }
 
