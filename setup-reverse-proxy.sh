@@ -98,8 +98,8 @@ check_dns() {
 # Function to install Nginx
 install_nginx() {
     print_status "Installing Nginx..."
-    apt update
-    apt install -y nginx
+    apt update -qq
+    DEBIAN_FRONTEND=noninteractive apt install -y nginx
     systemctl enable nginx
     systemctl start nginx
     print_success "Nginx installed and started"
@@ -108,7 +108,7 @@ install_nginx() {
 # Function to install Certbot
 install_certbot() {
     print_status "Installing Certbot for SSL certificates..."
-    apt install -y certbot python3-certbot-nginx
+    DEBIAN_FRONTEND=noninteractive apt install -y certbot python3-certbot-nginx
     print_success "Certbot installed"
 }
 
@@ -212,8 +212,8 @@ configure_firewall() {
     print_status "Configuring firewall..."
     
     if command -v ufw &> /dev/null; then
-        ufw allow 'Nginx Full'
-        ufw allow OpenSSH
+        ufw --force allow 'Nginx Full'
+        ufw --force allow OpenSSH
         print_success "UFW firewall configured"
     else
         print_warning "UFW not found. Please ensure ports 80 and 443 are open"
@@ -287,12 +287,7 @@ main() {
     echo "Email: $EMAIL"
     echo ""
     
-    read -p "Continue? (y/n): " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        print_status "Setup cancelled"
-        exit 0
-    fi
+    print_status "Proceeding with automatic setup..."
     
     install_nginx
     install_certbot
@@ -324,7 +319,7 @@ show_help() {
     echo "for your college chatbot domain."
     echo ""
     echo "Usage:"
-    echo "  sudo ./setup-reverse-proxy.sh        - Run the setup"
+    echo "  sudo ./setup-reverse-proxy.sh        - Run the automated setup"
     echo "  ./setup-reverse-proxy.sh --help      - Show this help"
     echo ""
     echo "Prerequisites:"
@@ -332,12 +327,15 @@ show_help() {
     echo "  - Your chatbot application running on port 8000"
     echo "  - Root access (script must be run with sudo)"
     echo ""
-    echo "What this script does:"
+    echo "What this script does (automatically, no prompts):"
     echo "  1. Installs Nginx and Certbot"
     echo "  2. Configures reverse proxy to forward requests to your app"
     echo "  3. Obtains free SSL certificates from Let's Encrypt"
     echo "  4. Sets up automatic certificate renewal"
     echo "  5. Configures security headers and firewall rules"
+    echo ""
+    echo "Note: This script runs automatically without user prompts."
+    echo "Configuration is loaded from .env file or uses defaults."
 }
 
 # Handle command line arguments
