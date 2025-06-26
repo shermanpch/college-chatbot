@@ -8,10 +8,8 @@ ENV PYTHONUNBUFFERED=1
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements file into the container at /app
-COPY requirements.txt .
-
 # Install system dependencies including Google Chrome for Kaleido/Plotly
+# Do this early since system packages change less frequently
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
@@ -24,34 +22,32 @@ RUN apt-get update && apt-get install -y \
 # Upgrade pip to latest version
 RUN pip install --upgrade pip
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy Python package configuration first for better caching
+# Dependencies change less frequently than application code
+COPY pyproject.toml .
 
-# Copy the .chainlit configuration directory
+# Install Python dependencies
+# This layer will be cached unless pyproject.toml changes
+RUN pip install --no-cache-dir -e .
+
+# Copy configuration files
+# These change less frequently than source code
 COPY .chainlit .chainlit
-
-# Copy chainlit.md
 COPY chainlit.md chainlit.md
-
-# Copy environment configuration
 COPY .env .env
 
-# Copy the application source code and utilities
-COPY chatbot chatbot
-COPY projectutils projectutils
-
-# Copy pyproject.toml for package installation
-COPY pyproject.toml pyproject.toml
-
-# Create data directory structure and copy only essential files
+# Create data directory structure and copy data files
+# Data changes less frequently than source code
 RUN mkdir -p data/chatbot data/chroma-peterson
 COPY data/chatbot data/chatbot
 
-# Copy the public directory for custom CSS
+# Copy static assets
 COPY public public
 
-# Install the project as a package to resolve imports
-RUN pip install -e .
+# Copy application source code last
+# Source code changes most frequently, so put it last for better caching
+COPY chatbot chatbot
+COPY projectutils projectutils
 
 # Make port 8000 available to the world outside this container
 EXPOSE 8000

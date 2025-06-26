@@ -198,7 +198,7 @@ docker rm college-chatbot-container
    cd college-chatbot
    python -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
+   pip install -e .
    ```
 
 2. **Configure environment:**
@@ -216,7 +216,7 @@ docker rm college-chatbot-container
 
 **Install development tools:**
 ```bash
-pip install -r requirements-dev.txt
+pip install -e ".[dev]"
 pre-commit install
 ```
 
@@ -329,9 +329,11 @@ college-chatbot/
 │   ├── prompts/               # LLM prompts and templates
 │   ├── utils/                 # Utility functions and helpers
 │   └── workflow/              # Workflow management and state
+├── projectutils/              # Project utilities and configuration
 ├── data/                      # College data and documents
 ├── public/                    # Static assets (logos, CSS)
-├── requirements.txt           # Python dependencies
+├── pyproject.toml             # Python project configuration and dependencies
+├── requirements.txt           # Docker/deployment dependencies
 ├── Dockerfile                 # Docker configuration
 ├── deploy.sh / deploy.ps1     # Deployment scripts
 ├── setup-reverse-proxy.sh     # Reverse proxy setup script
@@ -428,7 +430,7 @@ sudo ./setup-reverse-proxy.sh
 
 1. Fork the repository
 2. Create a feature branch
-3. Install development dependencies: `pip install -r requirements-dev.txt`
+3. Install development dependencies: `pip install -e ".[dev]"`
 4. Install pre-commit hooks: `pre-commit install`
 5. Make your changes (linting runs automatically on commit)
 6. Submit a pull request
