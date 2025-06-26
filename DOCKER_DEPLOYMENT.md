@@ -157,7 +157,7 @@ Excludes unnecessary files from the Docker build context including:
 Sets up the containerized environment with:
 - Python 3.11-slim base image
 - Required environment variables
-- All Python dependencies from `requirements.txt`
+- All Python dependencies from `pyproject.toml`
 - Application code, data, and configuration files
 - Exposes port 8000 for web access
 

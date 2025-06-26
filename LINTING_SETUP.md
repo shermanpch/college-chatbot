@@ -21,7 +21,7 @@ The setup is already installed! But for new contributors:
 
 ```bash
 # Install development dependencies
-pip install -r requirements-dev.txt
+pip install -e ".[dev]"
 
 # Install pre-commit hooks
 pre-commit install
