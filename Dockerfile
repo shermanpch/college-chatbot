@@ -21,6 +21,9 @@ RUN apt-get update && apt-get install -y \
     && apt-get install -y google-chrome-stable \
     && rm -rf /var/lib/apt/lists/*
 
+# Upgrade pip to latest version
+RUN pip install --upgrade pip
+
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
