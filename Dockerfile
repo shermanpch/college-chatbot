@@ -38,7 +38,7 @@ COPY chatbot chatbot
 COPY projectutils projectutils
 
 # Copy pyproject.toml for package installation
-COPY pyproject.toml .
+COPY pyproject.toml pyproject.toml
 
 # Create data directory structure and copy only essential files
 RUN mkdir -p data/chatbot data/chroma-peterson
