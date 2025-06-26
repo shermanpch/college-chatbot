@@ -30,10 +30,12 @@ COPY .chainlit .chainlit
 # Copy chainlit.md
 COPY chainlit.md chainlit.md
 
+# Copy environment configuration
+COPY .env .env
+
 # Copy the application source code and utilities
 COPY chatbot chatbot
 COPY projectutils projectutils
-COPY src src
 
 # Copy pyproject.toml for package installation
 COPY pyproject.toml .
