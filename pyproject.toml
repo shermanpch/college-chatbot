@@ -1,0 +1,155 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "college-chatbot"
+version = "0.1.0"
+description = "College Chatbot - AI-powered college admissions guidance system"
+requires-python = ">=3.10"
+dependencies = [
+    # Core Framework
+    "chainlit>=2.5.0",
+
+    # LangChain Ecosystem
+    "langchain>=0.3.0",
+    "langchain-openai>=0.3.0",
+    "langchain-chroma>=0.2.0",
+    "langchain-community>=0.3.0",
+    "langchain-huggingface>=0.3.0",
+    "langgraph>=0.2.0",
+    "sentence-transformers>=2.7.0",
+
+    # Document Processing
+    "unstructured[md]>=0.17.0",
+    "nltk>=3.9.0",
+
+    # Vector Database
+    "chromadb>=1.0.0",
+    "lark>=1.0.0",
+
+    # AI/ML APIs
+    "openai>=1.0.0",
+
+    # HTTP Client for async requests
+    "aiohttp>=3.8.0",
+
+    # Utilities
+    "python-dotenv>=1.0.0",
+    "jinja2>=3.0.0",
+
+    # Evaluation
+    "ragas>=0.1.0",
+    "datasets>=2.0.0",
+
+    # PDF Generation
+    "reportlab>=4.0.0",
+    "plotly>=5.17.0",
+    "kaleido>=0.2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.0",
+]
+
+[tool.setuptools]
+# This tells setuptools that your packages are directly in the root
+# (as opposed to a common alternative like a src/ layout)
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."] # Look for packages in the current directory (project root)
+include = [
+    "chatbot*",
+    "projectutils*"
+]
+exclude = []
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "catboost_info",
+    ".chainlit",
+]
+
+# Include Python files and Jupyter notebooks
+extend-include = ["*.ipynb"]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.10+
+target-version = "py310"
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`) codes by default.
+# Unlike Flake8, Ruff doesn't enable pycodestyle warnings (`W`) or
+# McCabe complexity (`C901`) by default.
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long, handled by black
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+    "W191",  # indentation contains tabs
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
+
+[tool.ruff.lint.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"**/tests/**/*" = ["PLR2004", "S101", "TID252"]
+# Notebooks can have cells with unused imports, line length issues, and magic commands
+"*.ipynb" = ["F401", "E402", "I001"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]

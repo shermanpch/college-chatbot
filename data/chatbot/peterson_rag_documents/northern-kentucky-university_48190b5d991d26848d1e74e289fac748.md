@@ -1,0 +1,319 @@
+# Northern Kentucky University
+
+**Document ID:** `48190b5d991d26848d1e74e289fac748`
+---
+
+Northern Kentucky University, a vibrant public institution located in Highland Heights, Kentucky, offers a diverse range of academic programs with a strong emphasis on student support and engagement. With an undergraduate enrollment of over 10,000 students, this university prides itself on creating a welcoming environment where personal growth and academic success go hand in hand.
+
+## Academics
+Northern Kentucky University offers an extensive array of programs, spanning fields from Biological Sciences to Business Management, and from Communication to Engineering. With a student-faculty ratio of 17:1, students can expect a more personalized learning experience, fostering engaging discussions and collaborative projects in smaller seminar settings. Notable programs include Exercise Physiology and Kinesiology, which prepare students for careers in health and fitness, and the innovative Animation and Interactive Technology major that combines creativity with cutting-edge technology.
+
+## Admissions
+NKU is considered moderately selective, with an acceptance rate of 84%. This means that roughly four out of five applicants are granted admission, making it accessible for students with solid academic backgrounds. The average high school GPA of admitted students is around 3.35, indicating that students with a B+ average or higher can feel confident in their application. The university has specific application deadlines for Fall freshmen, with applications due by August 19th, while transfer admissions are accepted on a rolling basis.
+
+## Cost & Aid
+The cost of attending Northern Kentucky University is categorized as moderate, meaning it's budget-friendly compared to many private institutions. The average financial aid package for students is approximately $14,914, which helps cover around 71% of the demonstrated financial need for most students. With an average net price hovering around $12,000 after aid, NKU ensures that education remains accessible for families from various economic backgrounds.
+
+## Campus Life
+With a dynamic campus life, Northern Kentucky University boasts a variety of clubs, organizations, and student activities that cater to a wide range of interests. Although specific housing data is not reported, students can generally expect a collaborative and supportive environment. The campus is bustling with energy, offering numerous opportunities for engagement, from academic societies to cultural events, making it a vibrant place for students to thrive socially and academically.
+
+## Athletics
+NKU’s athletic programs compete at the NCAA Division I level, featuring a variety of men’s and women’s sports that foster school spirit and community involvement. Notable sports include basketball, soccer, and track and field, all of which have dedicated followings on campus. The university’s athletic culture encourages students to participate, whether as athletes or supporters, enhancing the overall college experience.
+
+## Fast Facts
+**Founded:** 1968
+**Setting & Size:** Suburban • 10,163 undergrads
+**Acceptance Rate:** 84% (accessible)
+**Price Tag (Before Aid):** Moderate – $12,000 per year
+**Aid Generosity:** Avg package $14,914 • meets ≈ 71% of need
+**Stand-out Strength:** Strong focus on student support and engagement.
+
+Northern Kentucky University could be an excellent fit for students seeking a supportive community with robust academic programs and a vibrant campus life. If you’re looking for a place where you can thrive both academically and socially, NKU is worth considering for your college journey.
+
+---
+
+## General Information
+
+- **Location:** Highland Heights, Kentucky, United States
+- **Address:** Lucas Administrative Center, 400 Nunn Drive, Highland Heights, Kentucky 41099
+- **Phone:** 859-572-5220
+- **Fax:** 859-572-6665
+- **Email:** beanorse@nku.edu
+- **Contact Person:** Office of Admissions
+
+## Academics
+
+### Majors and Degrees
+
+#### Biological And Biomedical Sciences
+
+- Biology/biological Sciences, General (Bachelors: Yes, Associates: No)
+- Exercise Physiology And Kinesiology (Bachelors: Yes, Associates: No)
+- Neuroscience (Bachelors: Yes, Associates: No)
+
+#### Business, Management, Marketing, And Related Support Services
+
+- Accounting (Bachelors: Yes, Associates: No)
+- Business Administration And Management, General (Bachelors: Yes, Associates: No)
+- Business/commerce, General (Bachelors: Yes, Associates: No)
+- Business/managerial Economics (Bachelors: Yes, Associates: No)
+- Construction Management, General (Bachelors: Yes, Associates: No)
+- Entrepreneurship/entrepreneurial Studies (Bachelors: Yes, Associates: No)
+- Finance, General (Bachelors: Yes, Associates: No)
+- Human Resources Development (Bachelors: Yes, Associates: No)
+- Management Information Systems, General (Bachelors: Yes, Associates: No)
+- Marketing/marketing Management, General (Bachelors: Yes, Associates: No)
+- Organizational Behavior Studies (Bachelors: Yes, Associates: No)
+
+#### Communication, Journalism And Related Programs
+
+- Broadcast Journalism (Bachelors: Yes, Associates: No)
+- Health Communication (Bachelors: Yes, Associates: No)
+- Journalism (Bachelors: Yes, Associates: No)
+- Public Relations/image Management (Bachelors: Yes, Associates: No)
+- Speech Communication And Rhetoric (Bachelors: Yes, Associates: No)
+
+#### Communications Technologies/Technicians And Support Services
+
+- Animation, Interactive Technology, Video Graphics, And Special Effects (Bachelors: Yes, Associates: No)
+
+#### Computer And Information Sciences And Support Services
+
+- Computer And Information Sciences,  Other (Bachelors: Yes, Associates: No)
+- Computer And Information Sciences, General (Bachelors: Yes, Associates: No)
+- Computer And Information Systems Security/auditing/information Assurance (Bachelors: Yes, Associates: No)
+- Computer Software And Media Applications, Other (Bachelors: Yes, Associates: No)
+- Information Science/studies (Bachelors: Yes, Associates: No)
+- Information Technology (Bachelors: Yes, Associates: No)
+- Network And System Administration/administrator (Bachelors: Yes, Associates: No)
+
+#### Education
+
+- Business And Innovation/entrepreneurship Teacher Education (Bachelors: Yes, Associates: No)
+- Elementary Education And Teaching (Bachelors: Yes, Associates: No)
+- Junior High/intermediate/middle School Education And Teaching (Bachelors: Yes, Associates: No)
+- Kindergarten/preschool Education And Teaching (Bachelors: Yes, Associates: No)
+- Music Teacher Education (Bachelors: Yes, Associates: No)
+- Physical Education Teaching And Coaching (Bachelors: Yes, Associates: No)
+- Secondary Education And Teaching (Bachelors: Yes, Associates: No)
+- Social And Philosophical Foundations Of Education (Bachelors: Yes, Associates: No)
+- Special Education And Teaching, General (Bachelors: Yes, Associates: No)
+
+#### Engineering
+
+- Engineering Physics/applied Physics (Bachelors: Yes, Associates: No)
+
+#### Engineering Technologies/Technicians
+
+- Electrical, Electronic, And Communications Engineering Technology/technician (Bachelors: Yes, Associates: No)
+- Engineering/engineering-related Technologies/technicians, Other (Bachelors: Yes, Associates: No)
+- Manufacturing Engineering Technology/technician (Bachelors: Yes, Associates: No)
+
+#### English Language And Literature/Letters
+
+- English Language And Literature, General (Bachelors: Yes, Associates: No)
+
+#### Foreign Languages, Literatures, And Linguistics
+
+- French Language And Literature (Bachelors: Yes, Associates: No)
+- German Language And Literature (Bachelors: Yes, Associates: No)
+- Japanese Language And Literature (Bachelors: Yes, Associates: No)
+- Spanish Language And Literature (Bachelors: Yes, Associates: No)
+
+#### Health Professions And Related Clinical Sciences
+
+- Athletic Training/trainer (Bachelors: Yes, Associates: No)
+- Health Services/allied Health/health Sciences, General (Bachelors: Yes, Associates: No)
+- Medical Informatics (Bachelors: Yes, Associates: No)
+- Medical Radiologic Technology/science - Radiation Therapist (Bachelors: Yes, Associates: No)
+- Mental And Social Health Services And Allied Professions, Other (Bachelors: Yes, Associates: No)
+- Radiologic Technology/science - Radiographer (Bachelors: Yes, Associates: No)
+- Registered Nursing/registered Nurse (Bachelors: Yes, Associates: No)
+- Respiratory Care Therapy/therapist (Bachelors: Yes, Associates: No)
+
+#### History
+
+- History, General (Bachelors: Yes, Associates: No)
+
+#### Legal Professions And Studies
+
+- Legal Studies (Bachelors: Yes, Associates: No)
+
+#### Liberal Arts And Sciences, General Studies And Humanities
+
+- Liberal Arts And Sciences/liberal Studies (Bachelors: Yes, Associates: Yes)
+
+#### Mathematics And Statistics
+
+- Mathematics, General (Bachelors: Yes, Associates: No)
+- Statistics, General (Bachelors: Yes, Associates: No)
+
+#### Natural Resources And Conservation
+
+- Environmental Science (Bachelors: Yes, Associates: No)
+
+#### Philosophy And Religious Studies
+
+- Philosophy (Bachelors: Yes, Associates: No)
+
+#### Physical Sciences
+
+- Chemistry, General (Bachelors: Yes, Associates: No)
+- Geology/earth Science, General (Bachelors: Yes, Associates: No)
+- Physics, General (Bachelors: Yes, Associates: No)
+
+#### Psychology
+
+- Psychology, General (Bachelors: Yes, Associates: No)
+
+#### Public Administration And Social Service Professions
+
+- Human Services, General (Bachelors: Yes, Associates: No)
+- Social Work (Bachelors: Yes, Associates: No)
+
+#### Security And Protective Services
+
+- Criminal Justice/safety Studies (Bachelors: Yes, Associates: No)
+
+#### Social Sciences
+
+- Anthropology, General (Bachelors: Yes, Associates: No)
+- Econometrics And Quantitative Economics (Bachelors: Yes, Associates: No)
+- Geography (Bachelors: Yes, Associates: No)
+- International Relations And Affairs (Bachelors: Yes, Associates: No)
+- Political Science And Government, General (Bachelors: Yes, Associates: No)
+- Social Sciences, General (Bachelors: Yes, Associates: No)
+- Sociology, General (Bachelors: Yes, Associates: No)
+
+#### Visual And Performing Arts
+
+- Design And Visual Communications, General (Bachelors: Yes, Associates: No)
+- Drama And Dramatics/theatre Arts, General (Bachelors: Yes, Associates: No)
+- Fine/studio Arts, General (Bachelors: Yes, Associates: No)
+- Music, General (Bachelors: Yes, Associates: No)
+
+### Faculty
+
+- **Total Faculty:** 1005
+- **Student-Faculty Ratio:** 17:1
+- **Full-time Faculty:** 506
+- **Part-time Faculty:** 499
+- **Male Faculty:** 397
+- **Female Faculty:** 608
+
+## Admissions
+
+### Overview
+
+- **Acceptance Rate:** 84%
+- **Applied:** 7128
+- **Accepted:** 5971
+- **Enrolled:** 10163
+- **Female Applied:** 4435
+- **Female Accepted:** 3713
+- **Female Acceptance Rate:** 84%
+- **Male Applied:** 2624
+- **Male Accepted:** 2194
+- **Male Acceptance Rate:** 84%
+
+### Application Details
+
+- **Application Fee:** Not Reported
+- **Average High School GPA:** 3.35
+
+### Requirements
+
+#### Required
+
+- Transcript of high school record
+- A minimum high school GPA of 2
+
+#### Required for some programs
+
+- Other requirements may exist (see below)
+
+#### Other requirements:
+
+- Some programs require separate applications
+
+### Application Deadlines
+
+- **Fall freshmen:** Closing Date: August 19th, Notification: August 15th, Rolling Admissions: No
+- **Other early decision plan:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: No
+- **Transfer:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: Yes
+
+### Test Scores Accepted
+
+- **SAT Critical Reading:** Average: Not Reported, 25th Percentile: 473, 75th Percentile: 590
+- **SAT Math:** Average: Not Reported, 25th Percentile: 480, 75th Percentile: 560
+- **ACT Composite:** Average: Not Reported, 25th Percentile: 18, 75th Percentile: 25
+
+## Tuition and Financial Aid
+
+### Tuition & Fees
+
+
+### Financial Aid Overview
+
+- **Average Financial Aid Package:** $14914
+- **Average Freshman Financial Aid Package:** $15264
+- **Average International Financial Aid Package:** $15100
+- **Average Loan Aid:** $4305
+- **Average Grant Aid:** $7919
+- **Average Scholarship and Grant Aid Awarded:** $8718
+- **Percentage of Students Receiving Financial Aid Who Had Need:** 98%
+- **Average Percentage of Financial Need Met:** 71%
+- **Percentage of Students Whose Financial Need Was Fully Met:** 20%
+
+## Campus Life
+
+### Housing
+
+- **College-Owned Housing Available:** Not Reported
+- **Housing Requirements:** Not Reported
+- **Housing Options:** Not Reported
+- **Percent Undergrads in College Housing:** Not Reported
+
+### Student Activities
+
+- Not Reported
+
+### Student Services
+
+- Not Reported
+
+### Student Organizations
+
+- Not Reported
+
+### Campus Security and Safety
+
+- Not Reported
+
+## Athletics
+
+### Men's Sports
+
+- **Baseball:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Basketball:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Cross-country Running:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Golf:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Indoor Track:** Intercollegiate: No, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Softball:** Intercollegiate: No, Scholarship: No, Intramural: No
+- **Tennis:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Track And Field:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Volleyball:** Intercollegiate: No, Scholarship: No, Intramural: No
+
+### Women's Sports
+
+- **Baseball:** Intercollegiate: No, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Cross-country Running:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Golf:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Indoor Track:** Intercollegiate: No, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Softball:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Tennis:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Track And Field:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes
+- **Volleyball:** Intercollegiate: Division 1, Scholarship: Yes, Intramural: Yes

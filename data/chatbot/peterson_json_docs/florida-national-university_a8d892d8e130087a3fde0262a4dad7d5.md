@@ -1,0 +1,198 @@
+# Florida National University
+
+**Document ID:** `a8d892d8e130087a3fde0262a4dad7d5`
+
+## General Information
+
+- **Location:** Hialeah, Florida, United States
+- **Address:** 4425 W. Jose Regueiro (20th) Avenue, Hialeah, Florida 33012
+- **Phone:** 305-821-3333
+- **Fax:** 305-362-0595
+- **Email:** jctirado@fnu.edu
+- **Contact Person:** Mr. juan Tirado (University Director of Admissions)
+
+## Academics
+
+### Majors and Degrees
+
+#### Business, Management, Marketing, And Related Support Services
+
+- Accounting (Bachelors: Yes, Associates: No)
+- Accounting And Related Services, Other (Bachelors: No, Associates: Yes)
+- Accounting Technology/technician And Bookkeeping (Bachelors: No, Associates: Yes)
+- Business Administration And Management, General (Bachelors: Yes, Associates: Yes)
+- Business, Management, Marketing, And Related Support Services, Other (Bachelors: No, Associates: Yes)
+- Finance, General (Bachelors: Yes, Associates: No)
+- Hospitality Administration/management, General (Bachelors: No, Associates: Yes)
+- Marketing, Other (Bachelors: Yes, Associates: No)
+
+#### Communication, Journalism And Related Programs
+
+- Digital Communication And Media/multimedia (Bachelors: No, Associates: Yes)
+
+#### Computer And Information Sciences And Support Services
+
+- Computer Science (Bachelors: No, Associates: Yes)
+- Information Technology (Bachelors: Yes, Associates: Yes)
+- Network And System Administration/administrator (Bachelors: No, Associates: Yes)
+- Web Page, Digital/multimedia And Information Resources Design (Bachelors: No, Associates: Yes)
+
+#### Education
+
+- Education, General (Bachelors: No, Associates: Yes)
+
+#### Health Professions And Related Clinical Sciences
+
+- Allied Health And Medical Assisting Services, Other (Bachelors: No, Associates: Yes)
+- Dental Hygiene/hygienist (Bachelors: No, Associates: Yes)
+- Dental Laboratory Technology/technician (Bachelors: No, Associates: Yes)
+- Diagnostic Medical Sonography/sonographer And Ultrasound Technician (Bachelors: No, Associates: Yes)
+- Health Services Administration (Bachelors: Yes, Associates: Yes)
+- Medical/clinical Assistant (Bachelors: No, Associates: Yes)
+- Medical/health Management And Clinical Assistant/specialist (Bachelors: No, Associates: Yes)
+- Physical Therapy Assistant (Bachelors: Yes, Associates: Yes)
+- Radiologic Technology/science - Radiographer (Bachelors: No, Associates: Yes)
+- Registered Nursing/registered Nurse (Bachelors: Yes, Associates: Yes)
+- Respiratory Care Therapy/therapist (Bachelors: Yes, Associates: Yes)
+
+#### Legal Professions And Studies
+
+- Legal Assistant/paralegal (Bachelors: No, Associates: Yes)
+- Legal Studies (Bachelors: Yes, Associates: No)
+
+#### Liberal Arts And Sciences, General Studies And Humanities
+
+- Liberal Arts And Sciences, General Studies And Humanities, Other (Bachelors: No, Associates: Yes)
+- Liberal Arts And Sciences/liberal Studies (Bachelors: Yes, Associates: No)
+
+#### Psychology
+
+- Psychology, General (Bachelors: Yes, Associates: No)
+
+#### Public Administration And Social Service Professions
+
+- Public Administration (Bachelors: No, Associates: Yes)
+
+#### Security And Protective Services
+
+- Criminal Justice/law Enforcement Administration (Bachelors: Yes, Associates: No)
+- Criminal Justice/safety Studies (Bachelors: No, Associates: Yes)
+
+### Faculty
+
+- **Total Faculty:** 169
+- **Student-Faculty Ratio:** 20:1
+- **Full-time Faculty:** 83
+- **Part-time Faculty:** 86
+- **Male Faculty:** 70
+- **Female Faculty:** 99
+
+## Admissions
+
+### Overview
+
+- **Acceptance Rate:** 100%
+- **Applied:** 520
+- **Accepted:** 519
+- **Enrolled:** 2455
+- **Female Applied:** 364
+- **Female Accepted:** 363
+- **Female Acceptance Rate:** 100%
+- **Male Applied:** 156
+- **Male Accepted:** 156
+- **Male Acceptance Rate:** 100%
+
+### Application Details
+
+- **Application Fee:** Not Reported
+- **Average High School GPA:** Not Reported
+
+### Requirements
+
+#### Required
+
+- Transcript of high school record
+- Interview
+
+#### Required for some programs
+
+- Other requirements may exist (see below)
+
+### Application Deadlines
+
+- **Other early decision plan:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: No
+- **Transfer:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: No
+
+### Test Scores Accepted
+
+- No specific test score data reported.
+
+## Tuition and Financial Aid
+
+### Tuition & Fees
+
+- **Tuition (Private):** $16800
+- **Fees (Full-time student fees):** $568
+- **Fees (Room & board):** $14337
+- **Other Payment Considerations:** {'name': 'Guaranteed tuition plan offered', 'value': True}, {'name': 'Tuition pre-payment plan', 'value': False}, {'name': 'Tuition payment plans offered', 'value': True}, {'name': 'Tuition deferred payment', 'value': True}, {'name': 'Student groups that qualify for full or partial waiver of tuition', 'value': ['Employees']}
+
+### Financial Aid Overview
+
+- **Average Financial Aid Package:** $9902
+- **Average Freshman Financial Aid Package:** $9902
+- **Average International Financial Aid Package:** $224954
+- **Average Loan Aid:** $10900
+- **Average Grant Aid:** $9902
+- **Average Scholarship and Grant Aid Awarded:** $9902
+- **Percentage of Students Receiving Financial Aid Who Had Need:** 98%
+- **Average Percentage of Financial Need Met:** Not Reported
+- **Percentage of Students Whose Financial Need Was Fully Met:** Not Reported
+
+## Campus Life
+
+### Housing
+
+- **College-Owned Housing Available:** Not Reported
+- **Housing Requirements:** Not Reported
+- **Housing Options:** Not Reported
+- **Percent Undergrads in College Housing:** Not Reported
+
+### Student Activities
+
+- Not Reported
+
+### Student Services
+
+- Not Reported
+
+### Student Organizations
+
+- Not Reported
+
+### Campus Security and Safety
+
+- Not Reported
+
+## Athletics
+
+### Men's Sports
+
+- **Baseball:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Basketball:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Cross-country Running:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Soccer:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Softball:** Intercollegiate: No, Scholarship: No, Intramural: No
+- **Tennis:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Track And Field:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Volleyball:** Intercollegiate: No, Scholarship: No, Intramural: No
+
+### Women's Sports
+
+- **Baseball:** Intercollegiate: No, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Cross-country Running:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Soccer:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Softball:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Tennis:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Track And Field:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No
+- **Volleyball:** Intercollegiate: Yes, Scholarship: Yes, Intramural: No

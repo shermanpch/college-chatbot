@@ -1,0 +1,160 @@
+# Hult International Business School
+
+**Document ID:** `57e39d3a8081c2a8798c3aabda173b15`
+---
+
+Hult International Business School, located in the vibrant city of Cambridge, Massachusetts, is a private institution renowned for its focus on global business education. With a strong emphasis on practical, real-world learning, Hult prepares its students for a dynamic career in international business. Though specific undergraduate enrollment numbers are not reported, Hult's global perspective and innovative curriculum make it a compelling choice for students interested in business fields.
+
+## Academics
+At Hult, students can explore a diverse range of academic programs, primarily centered around business and management. The curriculum is designed to cultivate critical thinking and leadership skills, preparing graduates to thrive in a global marketplace. One standout program is the Bachelor of Business Administration, which combines theoretical knowledge with practical applications, fostering an entrepreneurial mindset. With a focus on small class sizes and a collaborative environment, students benefit from personalized attention that enhances their learning experience.
+
+## Admissions
+Hult is moderately selective, with an overall acceptance rate of 53%. This means that roughly half of all applicants gain admission, making it accessible for students with a solid academic background. While average high school GPA data is not reported, prospective students should aim for a strong academic record, as well as a compelling application that includes a transcript, essay, interview, and recommendation. Early decision applicants should keep in mind the November 1st deadline for submission.
+
+## Cost & Aid
+Attending Hult comes with a price tag reflective of its private status, with tuition set at $56,200 per year. This is considered high, typical of elite institutions, but the school is committed to making education affordable; all students who demonstrate financial need receive aid, with an average financial aid package of approximately $12,979. Families can expect that a significant percentage of their financial needs will be met, allowing students to focus more on their studies and less on financial burdens.
+
+## Campus Life
+Hult offers a unique campus life experience, blending academic rigor with a vibrant social scene. While specific housing details are not available, students can expect a supportive environment that emphasizes community and collaboration. The campus is ideal for those who thrive in a city-energized atmosphere, surrounded by like-minded peers and opportunities for networking. Extracurricular activities and clubs centered around business interests further enrich the student experience, enabling students to apply their classroom knowledge in real-life situations.
+
+## Athletics
+While Hult does not have a strong emphasis on athletics, the school offers a range of student-led sports and activities that promote wellness and camaraderie among students. The focus remains primarily on academics and professional development, yet there are opportunities for students interested in staying active and engaged.
+
+## Fast Facts
+**Founded:** Data not reported
+**Setting & Size:** Urban • Data not reported
+**Acceptance Rate:** 53% (moderately selective)
+**Price Tag (Before Aid):** High – $56,200 per year
+**Aid Generosity:** Avg package $12,979 • meets 100% of need
+**Stand-out Strength:** Global business education with a practical focus
+
+In conclusion, Hult International Business School could be an excellent addition to your college list. With its commitment to practical, international business education and a collaborative campus culture, Hult equips students with the skills and experiences necessary to succeed in today’s competitive global market. If you’re looking for a college that emphasizes innovation and real-world learning, Hult may just be the perfect fit for you.
+
+---
+
+## General Information
+
+- **Location:** Cambridge, Massachusetts, United States
+- **Address:** 1 Education Street, Cambridge, Massachusetts 02141
+- **Phone:** 617-746-1990
+- **Fax:** Not Reported
+- **Email:** Not Reported
+- **Contact Person:** Not Reported
+
+## Academics
+
+### Majors and Degrees
+
+#### Business, Management, Marketing, And Related Support Services
+
+- Business Administration And Management, General (Bachelors: Yes, Associates: No)
+
+### Faculty
+
+- **Total Faculty:** Not Reported
+- **Student-Faculty Ratio:** Not Reported
+- **Full-time Faculty:** Not Reported
+- **Part-time Faculty:** Not Reported
+- **Male Faculty:** Not Reported
+- **Female Faculty:** Not Reported
+
+## Admissions
+
+### Overview
+
+- **Acceptance Rate:** 53%
+- **Applied:** 2268
+- **Accepted:** 1210
+- **Enrolled:** 694
+- **Female Applied:** 1127
+- **Female Accepted:** 627
+- **Female Acceptance Rate:** 56%
+- **Male Applied:** 1094
+- **Male Accepted:** 558
+- **Male Acceptance Rate:** 51%
+
+### Application Details
+
+- **Application Fee:** $95
+- **Average High School GPA:** Not Reported
+
+### Requirements
+
+#### Required
+
+- Transcript of high school record
+- Essay
+- Interview
+- One recommendation
+- Other requirements exist (see below)
+
+#### Other requirements:
+
+- English proficiency
+- Contact details of a potential referee
+- Scholarship and financial aid application
+
+### Application Deadlines
+
+- **Other early decision plan:** Closing Date: November 1st, Notification: Not reported, Rolling Admissions: No
+- **Transfer:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: No
+
+### Test Scores Accepted
+
+- No specific test score data reported.
+
+## Tuition and Financial Aid
+
+### Tuition & Fees
+
+- **Tuition (Private):** $56200
+- **Fees (Full-time student fees):** $3950
+- **Fees (Room & board):** $19400
+- **Fees (Room only):** $15200
+
+### Financial Aid Overview
+
+- **Average Financial Aid Package:** $12979
+- **Average Freshman Financial Aid Package:** $13243
+- **Average International Financial Aid Package:** Not Reported
+- **Average Loan Aid:** Not Reported
+- **Average Grant Aid:** Not Reported
+- **Average Scholarship and Grant Aid Awarded:** $12979
+- **Percentage of Students Receiving Financial Aid Who Had Need:** 100%
+- **Average Percentage of Financial Need Met:** Not Reported
+- **Percentage of Students Whose Financial Need Was Fully Met:** Not Reported
+
+## Campus Life
+
+### Housing
+
+- **College-Owned Housing Available:** Not Reported
+- **Housing Requirements:** Not Reported
+- **Housing Options:** Not Reported
+- **Percent Undergrads in College Housing:** Not Reported
+
+### Student Activities
+
+- Not Reported
+
+### Student Services
+
+- Not Reported
+
+### Student Organizations
+
+- Not Reported
+
+### Campus Security and Safety
+
+- Not Reported
+
+## Athletics
+
+### Men's Sports
+
+- No men's sports data reported.
+
+### Women's Sports
+
+- No women's sports data reported.

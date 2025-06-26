@@ -1,0 +1,30 @@
+# College of Saint Mary Article
+
+**Document ID:** `9553f2116b85f65f886d46e0da07a49b`
+
+The College of Saint Mary, a private institution located in Omaha, Nebraska, is a nurturing community that focuses on empowering women through education. With an undergraduate enrollment of around 1,000 students, this college prides itself on a strong commitment to liberal arts and professional programs, providing an intimate learning environment that fosters personal and academic growth.
+
+## Academics
+Saint Mary offers a diverse range of programs, from Biological and Biomedical Sciences to Visual and Performing Arts, allowing students to explore their passions across multiple disciplines. The college is especially known for its strong education programs, including specialties like Early Childhood Education and Secondary Education, which prepare future educators to make a difference in classrooms. With a student-faculty ratio of 8:1, students benefit from a personalized learning experience that emphasizes discussion and collaboration in small seminar settings.
+
+## Admissions
+The College of Saint Mary is moderately selective, which means that around half of the applicants are admitted. The typical incoming student has an average high school GPA of around 2.0, making it accessible for those with solid academic foundations. While standardized test scores are not explicitly detailed, applicants are encouraged to present a well-rounded application including transcripts and recommendations, which help highlight their unique qualities and readiness for college life.
+
+## Cost & Aid
+The tuition at the College of Saint Mary is approximately $26,494 per year, placing it in the moderate price range among private colleges. The college demonstrates a commitment to making education affordable by meeting about 70% of students' financial needs. On average, students receive financial aid packages totaling about $20,832, which can cover a significant portion of their expenses, making it easier to manage the cost of education.
+
+## Campus Life
+Campus life at the College of Saint Mary is vibrant and supportive, with around 90% of students residing on campus, fostering a tight-knit community atmosphere. The college offers numerous clubs and organizations that cater to a variety of interests, including academic, cultural, and recreational activities. This collaborative environment encourages students to engage with one another, forming lasting friendships and connections that enrich their college experience.
+
+## Athletics
+The College of Saint Mary participates in NCAA Division II athletics, featuring a range of varsity teams for women, including basketball, soccer, and volleyball. The college's commitment to athletics adds another layer to campus life, promoting school spirit and camaraderie among students. While there are also opportunities for intramural sports, the focus on women's teams helps to create a unique and empowering sports culture.
+
+## Fast Facts
+**Founded:** 1923
+**Setting & Size:** Suburban • ~1,000 undergraduates
+**Acceptance Rate:** Moderately selective
+**Price Tag (Before Aid):** Moderate – $26,494 per year
+**Aid Generosity:** Avg package $20,832 • meets ≈ 70% of need
+**Stand-out Strength:** Strong focus on women's education and empowerment.
+
+The College of Saint Mary could be an excellent choice for students seeking a supportive and empowering environment that prioritizes women's education while offering a wide range of academic and extracurricular opportunities. If you're looking for a college that features a strong sense of community, dedicated faculty, and a commitment to helping women thrive, be sure to consider Saint Mary as a potential fit for your higher education journey.

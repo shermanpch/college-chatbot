@@ -1,0 +1,251 @@
+# Delaware Valley University
+
+**Document ID:** `195f4bde9ed4782dde6a416e21f900c2`
+
+## General Information
+
+- **Location:** Doylestown, Pennsylvania, United States
+- **Address:** 700 E. Butler Avenue, Doylestown, Pennsylvania 18901
+- **Phone:** 215-489-4343
+- **Fax:** Not Reported
+- **Email:** thomas.speakman@delval.edu
+- **Contact Person:** Thomas Speakman (Executive Director of Admission)
+
+## Academics
+
+### Majors and Degrees
+
+#### Agriculture, Agriculture Operations, And Related Sciences
+
+- Agribusiness/agricultural Business Operations (Bachelors: Yes, Associates: No)
+- Agroecology And Sustainable Agriculture (Bachelors: Yes, Associates: No)
+- Agronomy And Crop Science (Bachelors: Yes, Associates: No)
+- Animal Sciences, General (Bachelors: Yes, Associates: No)
+- Animal Sciences, Other (Bachelors: Yes, Associates: No)
+- Dairy Science (Bachelors: Yes, Associates: No)
+- Equestrian/equine Studies (Bachelors: Yes, Associates: Yes)
+- Food Science (Bachelors: Yes, Associates: No)
+- Food Technology And Processing (Bachelors: Yes, Associates: No)
+- Horse Husbandry/equine Science And Management (Bachelors: Yes, Associates: No)
+- Horticultural Science (Bachelors: Yes, Associates: No)
+- Landscaping And Groundskeeping (Bachelors: Yes, Associates: No)
+- Turf And Turfgrass Management (Bachelors: Yes, Associates: No)
+
+#### Architecture And Related Services
+
+- Environmental Design/architecture (Bachelors: Yes, Associates: No)
+
+#### Biological And Biomedical Sciences
+
+- Biology/biological Sciences, General (Bachelors: Yes, Associates: No)
+- Zoology/animal Biology (Bachelors: Yes, Associates: No)
+
+#### Business, Management, Marketing, And Related Support Services
+
+- Business Administration And Management, General (Bachelors: Yes, Associates: No)
+- Business/commerce, General (Bachelors: No, Associates: Yes)
+
+#### Communication, Journalism And Related Programs
+
+- Mass Communication/media Studies (Bachelors: Yes, Associates: No)
+
+#### Education
+
+- Education, General (Bachelors: Yes, Associates: No)
+- Secondary Education And Teaching (Bachelors: Yes, Associates: No)
+
+#### English Language And Literature/Letters
+
+- English Language And Literature, General (Bachelors: Yes, Associates: No)
+
+#### Liberal Arts And Sciences, General Studies And Humanities
+
+- General Studies (Bachelors: Yes, Associates: No)
+
+#### Multi/Interdisciplinary Studies
+
+- Multi-/interdisciplinary Studies, Other (Bachelors: Yes, Associates: No)
+- Nutrition Sciences (Bachelors: Yes, Associates: No)
+
+#### Natural Resources And Conservation
+
+- Environmental Science (Bachelors: Yes, Associates: No)
+- Wildlife, Fish And Wildlands Science And Management (Bachelors: Yes, Associates: No)
+
+#### Personal And Culinary Services
+
+- Restaurant, Culinary, And Catering Management/manager (Bachelors: Yes, Associates: No)
+
+#### Physical Sciences
+
+- Chemistry, General (Bachelors: Yes, Associates: No)
+
+#### Psychology
+
+- Counseling Psychology (Bachelors: Yes, Associates: No)
+- Educational Psychology (Bachelors: Yes, Associates: No)
+
+#### Security And Protective Services
+
+- Criminal Justice/law Enforcement Administration (Bachelors: Yes, Associates: No)
+
+#### Visual And Performing Arts
+
+- Visual And Performing Arts, Other (Bachelors: Yes, Associates: No)
+
+### Faculty
+
+- **Total Faculty:** 226
+- **Student-Faculty Ratio:** 14:1
+- **Full-time Faculty:** 93
+- **Part-time Faculty:** 133
+- **Male Faculty:** 111
+- **Female Faculty:** 112
+
+## Admissions
+
+### Overview
+
+- **Acceptance Rate:** 93%
+- **Applied:** 2343
+- **Accepted:** 2185
+- **Enrolled:** 1768
+- **Female Applied:** 1323
+- **Female Accepted:** 1246
+- **Female Acceptance Rate:** 94%
+- **Male Applied:** 1020
+- **Male Accepted:** 939
+- **Male Acceptance Rate:** 92%
+
+### Application Details
+
+- **Application Fee:** Not Reported
+- **Average High School GPA:** 3.39
+
+### Requirements
+
+#### Required
+
+- Transcript of high school record
+- Essay
+- A minimum high school GPA of 2
+
+#### Required for some programs
+
+- Interview
+
+#### Recommended
+
+- 2 recommendations
+
+### Application Deadlines
+
+- **Fall freshmen:** Closing Date: September 1st, Notification: November 1st, Rolling Admissions: No
+- **Other early decision plan:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: No
+- **Transfer:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: Yes
+
+### Test Scores Accepted
+
+- **SAT Critical Reading:** Average: 595, 25th Percentile: 560, 75th Percentile: 640
+- **SAT Math:** Average: 563, 25th Percentile: 517, 75th Percentile: 612
+- **ACT Composite:** Average: 27, 25th Percentile: 23, 75th Percentile: 30
+
+## Tuition and Financial Aid
+
+### Tuition & Fees
+
+- **Tuition (Private):** $43400
+- **Fees (Full-time student fees):** $2750
+- **Fees (Room & board):** $15340
+- **Fees (Room only):** $7250
+- **Other Payment Considerations:** {'name': 'Guaranteed tuition plan offered', 'value': False}, {'name': 'Tuition pre-payment plan', 'value': False}, {'name': 'Tuition payment plans offered', 'value': True}, {'name': 'Tuition deferred payment', 'value': True}, {'name': 'Student groups that qualify for full or partial waiver of tuition', 'value': ['Employees']}
+
+### Financial Aid Overview
+
+- **Average Financial Aid Package:** $35121
+- **Average Freshman Financial Aid Package:** $36473
+- **Average International Financial Aid Package:** $23167
+- **Average Loan Aid:** $4223
+- **Average Grant Aid:** $21865
+- **Average Scholarship and Grant Aid Awarded:** $31268
+- **Percentage of Students Receiving Financial Aid Who Had Need:** 100%
+- **Average Percentage of Financial Need Met:** 67.8%
+- **Percentage of Students Whose Financial Need Was Fully Met:** 19%
+
+## Campus Life
+
+### Housing
+
+- **College-Owned Housing Available:** Yes
+- **Housing Requirements:** Yes
+- **Housing Options:** Co-ed housing
+- **Percent Undergrads in College Housing:** 65%
+
+### Student Activities
+
+- Student-run campus newspaper
+- Drama/theatre group
+- Student-run radio station
+- Student-run television station
+- Marching band
+- Choral groups
+
+### Student Services
+
+- Legal services
+- Health clinic
+- Personal/psychological counseling
+- Women's center
+- International students advisor
+
+### Student Organizations
+
+- Greek fraternities
+- Greek sororities
+- Local sororities
+
+### Campus Security and Safety
+
+- 24-hour emergency telephone/alarm services
+- 24-hour patrols by trained officers
+- Student patrols
+- Late-night transport/escort services
+- Electronically-operated dormitory entrances
+
+## Athletics
+
+### Men's Sports
+
+- **Baseball:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Cheerleading:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Cross-country Running:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Equestrian Sports:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Field Hockey:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Football:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Golf:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Indoor Track:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Lacrosse:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Softball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Track And Field:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Volleyball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Wrestling:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+
+### Women's Sports
+
+- **Baseball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Cheerleading:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Cross-country Running:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Equestrian Sports:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Field Hockey:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Football:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Golf:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Indoor Track:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Lacrosse:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Softball:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Track And Field:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Volleyball:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Wrestling:** Intercollegiate: Division 3, Scholarship: No, Intramural: No

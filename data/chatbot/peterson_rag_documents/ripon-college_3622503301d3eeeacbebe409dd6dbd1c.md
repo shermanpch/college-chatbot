@@ -1,0 +1,325 @@
+# Ripon College
+
+**Document ID:** `3622503301d3eeeacbebe409dd6dbd1c`
+---
+
+Ripon College is a private liberal arts institution nestled in the charming town of Ripon, Wisconsin. With a student body of approximately 734 undergraduates, Ripon is known for its commitment to personalized education and a strong emphasis on the liberal arts, making it an ideal choice for students seeking a well-rounded academic experience.
+
+## Academics
+Ripon College offers a diverse range of academic programs, spanning fields from Biochemistry to English Literature. Students can choose from an array of majors, including unique offerings like Pre-veterinary Studies and Biopsychology. With a student-faculty ratio of 15:1, Ripon fosters an engaging classroom atmosphere where students can participate in discussion-heavy seminars and receive personalized instruction from dedicated faculty.
+
+## Admissions
+Ripon College is moderately selective, admitting around 84% of applicants. To be competitive, prospective students should aim for a solid academic record, with an average high school GPA of approximately 3.39. While standardized test scores are not strictly required, students who submit them might find that a strong SAT score of around 551 in Critical Reading or an ACT composite score of 23 can enhance their application. The college employs rolling admissions, allowing students to apply at their convenience.
+
+## Cost & Aid
+Attending Ripon College comes with a price tag typical of private institutions, with annual tuition set at $51,600. However, the college is known for its financial aid generosity, with an average financial aid package exceeding $40,000, which covers nearly 87% of demonstrated need. This means that a considerable number of students can afford to attend without overwhelming financial burdens.
+
+## Campus Life
+Ripon College boasts a vibrant campus life, with 96% of undergraduates living in college-owned housing, ranging from co-ed dormitories to men-only and women-only residences. Students enjoy a variety of activities, from participating in student-run media like newspapers and radio stations to joining Greek life or engaging in numerous clubs and organizations. The campus atmosphere is supportive and collaborative, perfect for students looking to build lasting friendships and connections.
+
+## Athletics
+Ripon College is an active participant in NCAA Division III athletics, offering a range of men's and women's sports, including soccer, basketball, and swimming. The college encourages student involvement in sports, both at the varsity and intramural levels, fostering a sense of community and school spirit among students.
+
+## Fast Facts
+**Founded:** 1851
+**Setting & Size:** Small-town campus • 734 undergraduates
+**Acceptance Rate:** 84% (moderately selective)
+**Price Tag (Before Aid):** High – $51,600 per year
+**Aid Generosity:** Avg package $40,658 • meets ≈ 87% of need
+**Stand-out Strength:** Strong focus on liberal arts education with personalized faculty support.
+
+Ripon College could be an excellent fit for students seeking a close-knit community and a strong liberal arts education. With its supportive campus life, generous financial aid, and a commitment to academic excellence, Ripon might just be the place where you can thrive both academically and personally.
+
+---
+
+## General Information
+
+- **Location:** Ripon, Wisconsin, United States
+- **Address:** 300 Seward Street, PO Box 248, Ripon, Wisconsin 54971
+- **Phone:** 920-748-8337
+- **Fax:** 920-748-8335
+- **Email:** adminfo@ripon.edu
+- **Contact Person:** Office of Admission
+
+## Academics
+
+### Majors and Degrees
+
+#### Agriculture, Agriculture Operations, And Related Sciences
+
+- Pre-veterinary Studies (Bachelors: Yes, Associates: No)
+
+#### Area, Ethnic, Cultural, And Gender Studies
+
+- Ethnic, Cultural Minority, Gender, And Group Studies, Other (Bachelors: Yes, Associates: No)
+
+#### Biological And Biomedical Sciences
+
+- Biochemistry (Bachelors: Yes, Associates: No)
+- Biology/biological Sciences, General (Bachelors: Yes, Associates: No)
+
+#### Business, Management, Marketing, And Related Support Services
+
+- Business Administration And Management, General (Bachelors: Yes, Associates: No)
+- Business/commerce, General (Bachelors: Yes, Associates: No)
+- Finance, General (Bachelors: Yes, Associates: No)
+
+#### Communication, Journalism And Related Programs
+
+- Speech Communication And Rhetoric (Bachelors: Yes, Associates: No)
+
+#### Computer And Information Sciences And Support Services
+
+- Computer Science (Bachelors: Yes, Associates: No)
+
+#### Education
+
+- Early Childhood Education And Teaching (Bachelors: Yes, Associates: No)
+- Education, General (Bachelors: Yes, Associates: No)
+- Education, Other (Bachelors: Yes, Associates: No)
+- Elementary Education And Teaching (Bachelors: Yes, Associates: No)
+- Music Teacher Education (Bachelors: Yes, Associates: No)
+- Physical Education Teaching And Coaching (Bachelors: Yes, Associates: No)
+- Secondary Education And Teaching (Bachelors: Yes, Associates: No)
+- Teacher Education, Multiple Levels (Bachelors: Yes, Associates: No)
+
+#### English Language And Literature/Letters
+
+- English Language And Literature, General (Bachelors: Yes, Associates: No)
+
+#### Foreign Languages, Literatures, And Linguistics
+
+- Foreign Languages And Literatures, General (Bachelors: Yes, Associates: No)
+- Spanish Language And Literature (Bachelors: Yes, Associates: No)
+
+#### Health Professions And Related Clinical Sciences
+
+- Athletic Training/trainer (Bachelors: Yes, Associates: No)
+- Health Services/allied Health/health Sciences, General (Bachelors: Yes, Associates: No)
+- Pre-dentistry Studies (Bachelors: Yes, Associates: No)
+- Pre-medicine/pre-medical Studies (Bachelors: Yes, Associates: No)
+
+#### History
+
+- History, General (Bachelors: Yes, Associates: No)
+
+#### Legal Professions And Studies
+
+- Pre-law Studies (Bachelors: Yes, Associates: No)
+
+#### Mathematics And Statistics
+
+- Mathematics, General (Bachelors: Yes, Associates: No)
+
+#### Multi/Interdisciplinary Studies
+
+- Biopsychology (Bachelors: Yes, Associates: No)
+- International/globalization Studies (Bachelors: Yes, Associates: No)
+- Multi-/interdisciplinary Studies, General (Bachelors: Yes, Associates: No)
+- Multi-/interdisciplinary Studies, Other (Bachelors: Yes, Associates: No)
+
+#### Natural Resources And Conservation
+
+- Environmental Studies (Bachelors: Yes, Associates: No)
+
+#### Parks, Recreation, Leisure And Fitness Studies
+
+- Exercise Science And Kinesiology (Bachelors: Yes, Associates: No)
+- Sport And Fitness Administration/management (Bachelors: Yes, Associates: No)
+
+#### Philosophy And Religious Studies
+
+- Philosophy (Bachelors: Yes, Associates: No)
+- Religion/religious Studies (Bachelors: Yes, Associates: No)
+
+#### Physical Sciences
+
+- Chemistry, General (Bachelors: Yes, Associates: No)
+- Chemistry, Other (Bachelors: Yes, Associates: No)
+- Physical Sciences, General (Bachelors: Yes, Associates: No)
+- Physics, General (Bachelors: Yes, Associates: No)
+
+#### Psychology
+
+- Behavioral Neuroscience (Bachelors: Yes, Associates: No)
+- Psychology, General (Bachelors: Yes, Associates: No)
+
+#### Social Sciences
+
+- Anthropology, General (Bachelors: Yes, Associates: No)
+- Economics, General (Bachelors: Yes, Associates: No)
+- Political Science And Government, General (Bachelors: Yes, Associates: No)
+- Sociology, General (Bachelors: Yes, Associates: No)
+
+#### Visual And Performing Arts
+
+- Art History, Criticism And Conservation (Bachelors: Yes, Associates: No)
+- Art/art Studies, General (Bachelors: Yes, Associates: No)
+- Drama And Dramatics/theatre Arts, General (Bachelors: Yes, Associates: No)
+- Fine/studio Arts, General (Bachelors: Yes, Associates: No)
+- Music, General (Bachelors: Yes, Associates: No)
+
+### Faculty
+
+- **Total Faculty:** 61
+- **Student-Faculty Ratio:** 15:1
+- **Full-time Faculty:** 51
+- **Part-time Faculty:** 10
+- **Male Faculty:** 42
+- **Female Faculty:** 34
+
+## Admissions
+
+### Overview
+
+- **Acceptance Rate:** 84%
+- **Applied:** 1797
+- **Accepted:** 1508
+- **Enrolled:** 734
+- **Female Applied:** 664
+- **Female Accepted:** 583
+- **Female Acceptance Rate:** 88%
+- **Male Applied:** 1133
+- **Male Accepted:** 925
+- **Male Acceptance Rate:** 82%
+
+### Application Details
+
+- **Application Fee:** $30
+- **Average High School GPA:** 3.39
+
+### Requirements
+
+#### Required
+
+- Transcript of high school record
+- A minimum high school GPA of 2
+
+#### Required for some programs
+
+- Interview
+
+#### Recommended
+
+- Essay
+- Interview
+
+### Application Deadlines
+
+- **Fall freshmen:** Closing Date: Not reported, Notification: September 15th, Rolling Admissions: Yes
+- **Out of state Fall freshmen:** Closing Date: Not reported, Notification: January 1st, Rolling Admissions: Yes
+- **Other early decision plan:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: No
+- **Transfer:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: Yes
+
+### Test Scores Accepted
+
+- **SAT Critical Reading:** Average: 551, 25th Percentile: Not Reported, 75th Percentile: Not Reported
+- **SAT Math:** Average: 535, 25th Percentile: Not Reported, 75th Percentile: Not Reported
+- **ACT Composite:** Average: 23, 25th Percentile: Not Reported, 75th Percentile: Not Reported
+
+## Tuition and Financial Aid
+
+### Tuition & Fees
+
+- **Tuition (Private):** $51600
+- **Fees (Room & board):** $10800
+- **Fees (Room only):** $5300
+
+### Financial Aid Overview
+
+- **Average Financial Aid Package:** $40658
+- **Average Freshman Financial Aid Package:** $41117
+- **Average International Financial Aid Package:** $39587
+- **Average Loan Aid:** $4701
+- **Average Grant Aid:** $27449
+- **Average Scholarship and Grant Aid Awarded:** $36949
+- **Percentage of Students Receiving Financial Aid Who Had Need:** 100%
+- **Average Percentage of Financial Need Met:** 86.91%
+- **Percentage of Students Whose Financial Need Was Fully Met:** 32%
+
+## Campus Life
+
+### Housing
+
+- **College-Owned Housing Available:** Yes
+- **Housing Requirements:** Yes
+- **Housing Options:** Co-ed housing, Men-only housing, Women-only housing, Freshman car parking
+- **Percent Undergrads in College Housing:** 96%
+
+### Student Activities
+
+- Student-run campus newspaper
+- Drama/theatre group
+- Student-run radio station
+- Student-run television station
+- Marching band
+- Choral groups
+
+### Student Services
+
+- Legal services
+- Health clinic
+- Personal/psychological counseling
+- Women's center
+- International students advisor
+
+### Student Organizations
+
+- Greek fraternities
+- Greek sororities
+- Local fraternities
+- Local sororities
+
+### Campus Security and Safety
+
+- 24-hour emergency telephone/alarm services
+- 24-hour patrols by trained officers
+- Student patrols
+- Late-night transport/escort services
+- Electronically-operated dormitory entrances
+
+## Athletics
+
+### Men's Sports
+
+- **Baseball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Basketball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Cheerleading:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Cross-country Running:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Equestrian Sports:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Fencing:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Football:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Indoor Track:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Racquetball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Rugby:** Intercollegiate: Yes, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Softball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Swimming And Diving:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Table Tennis:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Tennis:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Track And Field:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Ultimate Frisbee:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Volleyball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Water Polo:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+
+### Women's Sports
+
+- **Baseball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Cheerleading:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Cross-country Running:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Equestrian Sports:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Fencing:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Football:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Indoor Track:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Racquetball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Rugby:** Intercollegiate: Yes, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Softball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Swimming And Diving:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Table Tennis:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Tennis:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Track And Field:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Ultimate Frisbee:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Volleyball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Water Polo:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes

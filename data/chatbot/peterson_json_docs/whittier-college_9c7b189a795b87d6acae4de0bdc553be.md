@@ -1,0 +1,263 @@
+# Whittier College
+
+**Document ID:** `9c7b189a795b87d6acae4de0bdc553be`
+
+## General Information
+
+- **Location:** Whittier, California, United States
+- **Address:** 13406 East Philadelphia Street, Whittier, California 90608-0634
+- **Phone:** 562-907-4238
+- **Fax:** 562-907-4870
+- **Email:** admission@whittier.edu
+- **Contact Person:** Erasmo Fuentes (Director of Admission)
+
+## Academics
+
+### Majors and Degrees
+
+#### Area, Ethnic, Cultural, And Gender Studies
+
+- Latin American Studies (Bachelors: Yes, Associates: No)
+
+#### Biological And Biomedical Sciences
+
+- Biochemistry (Bachelors: Yes, Associates: No)
+- Biology/biological Sciences, General (Bachelors: Yes, Associates: No)
+
+#### Business, Management, Marketing, And Related Support Services
+
+- Business Administration And Management, General (Bachelors: Yes, Associates: No)
+- Business Statistics (Bachelors: Yes, Associates: No)
+
+#### Engineering
+
+- Engineering Physics/applied Physics (Bachelors: Yes, Associates: No)
+
+#### English Language And Literature/Letters
+
+- American Literature (united States) (Bachelors: Yes, Associates: No)
+- English Language And Literature, General (Bachelors: Yes, Associates: No)
+- English Literature (british And Commonwealth) (Bachelors: Yes, Associates: No)
+
+#### Family And Consumer Sciences/Human Sciences
+
+- Child Development (Bachelors: Yes, Associates: No)
+- Work And Family Studies (Bachelors: Yes, Associates: No)
+
+#### Foreign Languages, Literatures, And Linguistics
+
+- Chinese Language And Literature (Bachelors: Yes, Associates: No)
+- French Language And Literature (Bachelors: Yes, Associates: No)
+- Spanish Language And Literature (Bachelors: Yes, Associates: No)
+
+#### Health Professions And Related Clinical Sciences
+
+- Pre-medicine/pre-medical Studies (Bachelors: Yes, Associates: No)
+
+#### History
+
+- History, General (Bachelors: Yes, Associates: No)
+
+#### Legal Professions And Studies
+
+- Pre-law Studies (Bachelors: Yes, Associates: No)
+
+#### Liberal Arts And Sciences, General Studies And Humanities
+
+- Liberal Arts And Sciences/liberal Studies (Bachelors: Yes, Associates: No)
+
+#### Mathematics And Statistics
+
+- Mathematics, General (Bachelors: Yes, Associates: No)
+
+#### Multi/Interdisciplinary Studies
+
+- International/globalization Studies (Bachelors: Yes, Associates: No)
+- Multi-/interdisciplinary Studies, General (Bachelors: Yes, Associates: No)
+
+#### Natural Resources And Conservation
+
+- Environmental Science (Bachelors: Yes, Associates: No)
+- Environmental Studies (Bachelors: Yes, Associates: No)
+
+#### Parks, Recreation, Leisure And Fitness Studies
+
+- Exercise Science And Kinesiology (Bachelors: Yes, Associates: No)
+- Sports, Kinesiology, And Physical Education/fitness, General (Bachelors: Yes, Associates: No)
+
+#### Philosophy And Religious Studies
+
+- Philosophy (Bachelors: Yes, Associates: No)
+- Religion/religious Studies (Bachelors: Yes, Associates: No)
+
+#### Physical Sciences
+
+- Chemistry, General (Bachelors: Yes, Associates: No)
+- Physics, General (Bachelors: Yes, Associates: No)
+
+#### Psychology
+
+- Psychology, General (Bachelors: Yes, Associates: No)
+
+#### Public Administration And Social Service Professions
+
+- Human Services, General (Bachelors: Yes, Associates: No)
+- Social Work (Bachelors: Yes, Associates: No)
+
+#### Social Sciences
+
+- Anthropology, General (Bachelors: Yes, Associates: No)
+- Economics, General (Bachelors: Yes, Associates: No)
+- Economics, Other (Bachelors: Yes, Associates: No)
+- Political Science And Government, General (Bachelors: Yes, Associates: No)
+- Social Sciences, General (Bachelors: Yes, Associates: No)
+- Sociology, General (Bachelors: Yes, Associates: No)
+
+#### Visual And Performing Arts
+
+- Art History, Criticism And Conservation (Bachelors: Yes, Associates: No)
+- Art/art Studies, General (Bachelors: Yes, Associates: No)
+- Cinematography And Film/video Production (Bachelors: Yes, Associates: No)
+- Drama And Dramatics/theatre Arts, General (Bachelors: Yes, Associates: No)
+- Fine/studio Arts, General (Bachelors: Yes, Associates: No)
+- Graphic Design (Bachelors: Yes, Associates: No)
+- Music Technology (Bachelors: Yes, Associates: No)
+- Music, General (Bachelors: Yes, Associates: No)
+
+### Faculty
+
+- **Total Faculty:** Not Reported
+- **Student-Faculty Ratio:** Not Reported
+- **Full-time Faculty:** Not Reported
+- **Part-time Faculty:** Not Reported
+- **Male Faculty:** Not Reported
+- **Female Faculty:** Not Reported
+
+## Admissions
+
+### Overview
+
+- **Acceptance Rate:** 86%
+- **Applied:** 2756
+- **Accepted:** 2362
+- **Enrolled:** 813
+- **Female Applied:** 1391
+- **Female Accepted:** 1213
+- **Female Acceptance Rate:** 87%
+- **Male Applied:** 1365
+- **Male Accepted:** 1149
+- **Male Acceptance Rate:** 84%
+
+### Application Details
+
+- **Application Fee:** Not Reported
+- **Average High School GPA:** 3.48
+
+### Requirements
+
+#### Required
+
+- Transcript of high school record
+- Essay
+- A minimum high school GPA of 2.5
+- 2 recommendations
+
+#### Required for some programs
+
+- A minimum high school GPA of 3
+
+#### Recommended
+
+- A minimum high school GPA of 2.5
+- Interview
+
+### Application Deadlines
+
+- **Fall freshmen:** Closing Date: Not reported, Notification: December 15th, Rolling Admissions: Yes
+- **Out of state Fall freshmen:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: Yes
+- **Other early decision plan:** Closing Date: November 15th, Notification: January 15th, Rolling Admissions: No
+- **Transfer:** Closing Date: Not reported, Notification: Not reported, Rolling Admissions: Yes
+
+### Test Scores Accepted
+
+- **SAT Critical Reading:** Average: 603, 25th Percentile: 540, 75th Percentile: 660
+- **SAT Math:** Average: 621, 25th Percentile: 520, 75th Percentile: 620
+- **ACT Composite:** Average: 25, 25th Percentile: 21, 75th Percentile: 22
+
+## Tuition and Financial Aid
+
+### Tuition & Fees
+
+- **Tuition (Private):** $50410
+- **Fees (Full-time student fees):** $940
+- **Fees (Room & board):** $15471
+- **Fees (Room only):** $8631
+
+### Financial Aid Overview
+
+- **Average Financial Aid Package:** $41357
+- **Average Freshman Financial Aid Package:** $47310
+- **Average International Financial Aid Package:** $28229
+- **Average Loan Aid:** $4636
+- **Average Grant Aid:** $27794
+- **Average Scholarship and Grant Aid Awarded:** $38450
+- **Percentage of Students Receiving Financial Aid Who Had Need:** 96%
+- **Average Percentage of Financial Need Met:** 80%
+- **Percentage of Students Whose Financial Need Was Fully Met:** 20%
+
+## Campus Life
+
+### Housing
+
+- **College-Owned Housing Available:** Not Reported
+- **Housing Requirements:** Not Reported
+- **Housing Options:** Not Reported
+- **Percent Undergrads in College Housing:** Not Reported
+
+### Student Activities
+
+- Not Reported
+
+### Student Services
+
+- Not Reported
+
+### Student Organizations
+
+- Not Reported
+
+### Campus Security and Safety
+
+- Not Reported
+
+## Athletics
+
+### Men's Sports
+
+- **Baseball:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Cross-country Running:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Indoor Track:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Lacrosse:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Softball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Swimming And Diving:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Tennis:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Track And Field:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Volleyball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: Yes
+- **Water Polo:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+
+### Women's Sports
+
+- **Baseball:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Basketball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Cross-country Running:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Indoor Track:** Intercollegiate: Not Reported, Scholarship: No, Intramural: No
+- **Lacrosse:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Soccer:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Softball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Swimming And Diving:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Tennis:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Track And Field:** Intercollegiate: Division 3, Scholarship: No, Intramural: No
+- **Volleyball:** Intercollegiate: Division 3, Scholarship: No, Intramural: Yes
+- **Water Polo:** Intercollegiate: Division 3, Scholarship: No, Intramural: No

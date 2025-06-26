@@ -1,0 +1,38 @@
+# Core Framework
+chainlit>=2.5.0
+
+# LangChain Ecosystem
+langchain>=0.3.0
+langchain-openai>=0.3.0
+langchain-chroma>=0.2.0
+langchain-community>=0.3.0
+langchain-huggingface>=0.3.0
+langgraph>=0.2.0
+sentence-transformers>=2.7.0
+
+# Document Processing
+unstructured[md]>=0.17.0
+nltk>=3.9.0
+
+# Vector Database
+chromadb>=1.0.0
+lark>=1.0.0
+
+# AI/ML APIs
+openai>=1.0.0
+
+# HTTP Client for async requests
+aiohttp>=3.8.0
+
+# Utilities
+python-dotenv>=1.0.0
+jinja2>=3.0.0
+
+# Evaluation
+ragas>=0.1.0
+datasets>=2.0.0
+
+# PDF Generation
+reportlab>=4.0.0
+plotly>=5.17.0
+kaleido>=0.2.1

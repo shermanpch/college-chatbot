@@ -1,0 +1,37 @@
+# Thomas Aquinas College - California Article
+
+**Document ID:** `2737fe121bbb4aef34c30637e311114c`
+
+### Thomas Aquinas College - California
+
+Nestled in the charming city of Santa Paula, California, Thomas Aquinas College is a private institution focused on a liberal arts education that emphasizes a classical approach to learning. With an undergraduate enrollment of approximately 372 students, this college is particularly well-suited for those who appreciate a close-knit academic community.
+
+## Academics
+
+At Thomas Aquinas College, students engage in a rigorous curriculum designed to cultivate critical thinking and articulate expression. The college offers a unique educational experience where the focus is not merely on memorizing facts but on fostering a deep understanding of various subjects, ranging from general studies in the liberal arts to specialized programs in humanities. With an impressive student-faculty ratio of 11:1, students benefit from intimate class sizes that encourage discussion-heavy seminars, allowing for meaningful interactions with professors and peers alike.
+
+## Admissions
+
+The admissions process at Thomas Aquinas College is moderately selective, with an acceptance rate of 80%. This means that around four out of five applicants are offered a place, making it accessible for many students. To strengthen their applications, prospective students typically present an impressive A-range average GPA of 3.78, along with SAT or ACT scores that reflect their academic prowess—e.g., a high SAT Critical Reading score averages around 670. The college employs a rolling admissions process, offering flexibility for students to apply throughout the year.
+
+## Cost & Aid
+
+The price tag for attending Thomas Aquinas College stands at a moderate $31,000 per year, which is typical for private institutions. However, the college is committed to making education accessible; they meet 100% of demonstrated financial need. On average, students receive a financial aid package that covers over $26,000, significantly easing the financial burden. This generous support ensures that students can focus on their studies without overwhelming concerns about tuition costs.
+
+## Campus Life
+
+Campus life at Thomas Aquinas College is vibrant and community-oriented. The college provides various housing options, including men-only and women-only accommodations, promoting a comfortable living environment for all students. Though specific percentages of undergraduates living on campus are not reported, the college-owned housing fosters a tight-knit community where students can build lasting friendships. The college also offers a range of extracurricular activities, from clubs to intramural sports, creating a collaborative and supportive atmosphere that enhances the overall college experience.
+
+## Athletics
+
+While Thomas Aquinas College does not compete at the NCAA level, it offers a robust selection of intramural sports, including basketball, soccer, and rock climbing. These activities not only promote physical fitness but also encourage teamwork and camaraderie among students. The emphasis on participation rather than competition allows students to engage in athletics in a fun, relaxed setting.
+
+## Fast Facts
+**Founded:** Not reported
+**Setting & Size:** Suburban • 372 undergrads
+**Acceptance Rate:** 80% (accessible)
+**Price Tag (Before Aid):** Moderate – $31,000 per year
+**Aid Generosity:** Avg package $26,803 • meets 100% of need
+**Stand-out Strength:** Unique liberal arts curriculum with a classical focus
+
+Why might Thomas Aquinas College belong on your college list? With its commitment to a rigorous liberal arts education, a supportive campus community, and generous financial aid options, it offers an enriching environment where students can thrive academically and personally. If you are looking for a place that values deep learning and individual growth, Thomas Aquinas College could be an ideal fit for your educational journey.
