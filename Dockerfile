@@ -8,15 +8,11 @@ ENV PYTHONUNBUFFERED=1
 # Set the working directory in the container
 WORKDIR /app
 
-# Install system dependencies including Google Chrome for Kaleido/Plotly
-# Do this early since system packages change less frequently
+# Install minimal system dependencies for Python packages
+# Removed Chrome installation - Kaleido package provides its own browser engine
 RUN apt-get update && apt-get install -y \
-    wget \
-    gnupg \
-    && wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
-    && apt-get update \
-    && apt-get install -y google-chrome-stable \
+    gcc \
+    g++ \
     && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip to latest version

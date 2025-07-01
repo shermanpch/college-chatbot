@@ -165,7 +165,8 @@ show_status() {
 
     echo ""
     print_status "To follow logs in real-time, run:"
-    echo "$DOCKER_CMD logs -f $CONTAINER_NAME"
+    echo "./deploy.sh --follow-logs"
+    echo "Or: $DOCKER_CMD logs -f $CONTAINER_NAME"
 
     echo ""
     print_status "To stop the container, run:"
@@ -206,6 +207,7 @@ show_help() {
     echo "  ./deploy.sh                      - Deploy the application"
     echo "  ./deploy.sh --help               - Show this help message"
     echo "  ./deploy.sh --logs               - Show container logs"
+    echo "  ./deploy.sh --follow-logs        - Follow container logs in real-time"
     echo "  ./deploy.sh --stop               - Stop the container"
     echo "  ./deploy.sh --status             - Show container status"
     echo "  ./deploy.sh --deploy-with-proxy  - Deploy app and setup reverse proxy"
@@ -309,6 +311,11 @@ case "${1:-}" in
         ;;
     --logs)
         $DOCKER_CMD logs $CONTAINER_NAME
+        exit 0
+        ;;
+    --follow-logs)
+        print_status "Following container logs in real-time (press Ctrl+C to exit)..."
+        $DOCKER_CMD logs -f $CONTAINER_NAME
         exit 0
         ;;
     --stop)

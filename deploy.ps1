@@ -4,6 +4,7 @@
 param(
     [switch]$Help,
     [switch]$Logs,
+    [switch]$FollowLogs,
     [switch]$Stop,
     [switch]$Status,
     [switch]$DeployWithProxy
@@ -204,7 +205,8 @@ function Show-Status {
 
     Write-Host ""
     Write-Status "To follow logs in real-time, run:"
-    Write-Host "docker logs -f $CONTAINER_NAME"
+    Write-Host ".\deploy.ps1 -FollowLogs"
+    Write-Host "Or: docker logs -f $CONTAINER_NAME"
 
     Write-Host ""
     Write-Status "To stop the container, run:"
@@ -270,6 +272,7 @@ function Show-Help {
     Write-Host "  .\deploy.ps1                     - Deploy the application"
     Write-Host "  .\deploy.ps1 -Help               - Show this help message"
     Write-Host "  .\deploy.ps1 -Logs               - Show container logs"
+    Write-Host "  .\deploy.ps1 -FollowLogs         - Follow container logs in real-time"
     Write-Host "  .\deploy.ps1 -Stop               - Stop the container"
     Write-Host "  .\deploy.ps1 -Status             - Show container status"
     Write-Host "  .\deploy.ps1 -DeployWithProxy    - Deploy app and show proxy info"
@@ -308,6 +311,17 @@ elseif ($Logs) {
     }
     catch {
         Write-Error "Failed to get container logs. Make sure the container is running."
+        exit 1
+    }
+    exit 0
+}
+elseif ($FollowLogs) {
+    Write-Status "Following container logs in real-time (press Ctrl+C to exit)..."
+    try {
+        docker logs -f $CONTAINER_NAME
+    }
+    catch {
+        Write-Error "Failed to follow container logs. Make sure the container is running."
         exit 1
     }
     exit 0
