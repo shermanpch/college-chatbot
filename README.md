@@ -99,6 +99,7 @@ TOKENIZERS_PARALLELISM=False
 ```powershell
 .\deploy.ps1                   # Deploy application
 .\deploy.ps1 -Logs             # View container logs
+.\deploy.ps1 -FollowLogs       # Follow container logs in real-time
 .\deploy.ps1 -Status           # Check container status
 .\deploy.ps1 -Stop             # Stop container
 .\deploy.ps1 -Help             # See all options
@@ -108,6 +109,7 @@ TOKENIZERS_PARALLELISM=False
 ```bash
 ./deploy.sh                    # Deploy application
 ./deploy.sh --logs             # View container logs
+./deploy.sh --follow-logs      # Follow container logs in real-time
 ./deploy.sh --status           # Check container status
 ./deploy.sh --stop             # Stop container
 ./deploy.sh --help             # See all options
@@ -145,6 +147,11 @@ docker rm college-chatbot-container
 
 3. **Monitor Logs**
    ```bash
+   # Using deploy scripts
+   ./deploy.sh --follow-logs      # Linux/macOS
+   .\deploy.ps1 -FollowLogs      # Windows PowerShell
+   
+   # Or using Docker directly
    docker logs -f college-chatbot-container
    ```
 
