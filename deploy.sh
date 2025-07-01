@@ -79,12 +79,12 @@ load_and_validate_env() {
     fi
 
     print_status "Loading environment variables from .env file..."
-    
+
     # Export variables from .env file (ignore comments and empty lines)
     set -a
     source .env
     set +a
-    
+
     print_success "Environment variables loaded from .env file"
 
     # Validate required variables
@@ -109,7 +109,7 @@ load_and_validate_env() {
         echo "You can use example.env as a reference."
         exit 1
     fi
-    
+
     print_success "All required environment variables are set"
 }
 
@@ -182,7 +182,7 @@ main() {
 
     # Check prerequisites
     check_docker
-    
+
     # Load and validate environment variables from .env file
     load_and_validate_env
 
@@ -270,18 +270,18 @@ validate_proxy_config() {
 # Function to setup reverse proxy
 setup_reverse_proxy() {
     print_status "Setting up reverse proxy..."
-    
+
     validate_proxy_config
-    
+
     if [ ! -f "setup-reverse-proxy.sh" ]; then
         print_error "setup-reverse-proxy.sh not found!"
         print_error "Please ensure the reverse proxy setup script is in the same directory."
         exit 1
     fi
-    
+
     # Make the script executable
     chmod +x setup-reverse-proxy.sh
-    
+
     if [ "$EUID" -eq 0 ]; then
         print_status "Running reverse proxy setup as root..."
         if ./setup-reverse-proxy.sh; then

@@ -45,12 +45,12 @@ The College Chatbot is a Chainlit-powered web application that helps students na
    ```
 
 3. **Deploy:**
-   
+
    **Windows (PowerShell):**
    ```powershell
    .\deploy.ps1
    ```
-   
+
    **macOS/Linux:**
    ```bash
    ./deploy.sh
@@ -150,7 +150,7 @@ docker rm college-chatbot-container
    # Using deploy scripts
    ./deploy.sh --follow-logs      # Linux/macOS
    .\deploy.ps1 -FollowLogs      # Windows PowerShell
-   
+
    # Or using Docker directly
    docker logs -f college-chatbot-container
    ```
@@ -474,4 +474,4 @@ If you encounter issues:
 
 ---
 
-**Pro Tip**: Have your SAT score ready and think about which US states you'd like to attend college in before starting! 🎓 
+**Pro Tip**: Have your SAT score ready and think about which US states you'd like to attend college in before starting! 🎓

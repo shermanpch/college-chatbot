@@ -49,13 +49,13 @@ load_env_file() {
         set -a
         source .env
         set +a
-        
+
         # Update configuration with loaded values
         DOMAIN="${DOMAIN:-college-coach.dev}"
         WWW_DOMAIN="${WWW_DOMAIN:-www.$DOMAIN}"
         APP_PORT="${PORT:-8000}"
         EMAIL="${SSL_EMAIL:-your-email@example.com}"
-        
+
         print_success "Environment variables loaded"
     else
         print_warning ".env file not found, using default configuration"
@@ -73,21 +73,21 @@ check_root() {
 # Function to check if domain points to this server
 check_dns() {
     print_status "Checking DNS configuration..."
-    
+
     SERVER_IP=$(curl -s http://checkip.amazonaws.com/)
     DOMAIN_IP=$(dig +short $DOMAIN)
     WWW_DOMAIN_IP=$(dig +short $WWW_DOMAIN)
-    
+
     print_status "Server IP: $SERVER_IP"
     print_status "Domain IP ($DOMAIN): $DOMAIN_IP"
     print_status "WWW Domain IP ($WWW_DOMAIN): $WWW_DOMAIN_IP"
-    
+
     if [ "$SERVER_IP" != "$DOMAIN_IP" ]; then
         print_warning "Domain $DOMAIN does not point to this server"
         print_warning "Please update your DNS records before continuing"
         echo "Add this A record: $DOMAIN -> $SERVER_IP"
     fi
-    
+
     if [ "$SERVER_IP" != "$WWW_DOMAIN_IP" ]; then
         print_warning "Domain $WWW_DOMAIN does not point to this server"
         print_warning "Please update your DNS records before continuing"
@@ -115,7 +115,7 @@ install_certbot() {
 # Function to create Nginx configuration
 create_nginx_config() {
     print_status "Creating Nginx configuration..."
-    
+
     cat > /etc/nginx/sites-available/$DOMAIN << EOF
 server {
     listen 80;
@@ -138,11 +138,11 @@ server {
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto \$scheme;
         proxy_cache_bypass \$http_upgrade;
-        
+
         # WebSocket support
         proxy_set_header Upgrade \$http_upgrade;
         proxy_set_header Connection "upgrade";
-        
+
         # Timeout settings
         proxy_connect_timeout 60s;
         proxy_send_timeout 60s;
@@ -160,13 +160,13 @@ EOF
 
     # Enable the site
     ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
-    
+
     # Remove default site if it exists
     rm -f /etc/nginx/sites-enabled/default
-    
+
     # Test Nginx configuration
     nginx -t
-    
+
     if [ $? -eq 0 ]; then
         print_success "Nginx configuration created and validated"
         systemctl reload nginx
@@ -179,16 +179,16 @@ EOF
 # Function to obtain SSL certificate
 setup_ssl() {
     print_status "Setting up SSL certificate with Let's Encrypt..."
-    
+
     # Check if email is set
     if [ "$EMAIL" = "your-email@example.com" ]; then
         print_error "Please update the EMAIL variable in this script with your actual email address"
         exit 1
     fi
-    
+
     # Obtain certificate
     certbot --nginx -d $DOMAIN -d $WWW_DOMAIN --non-interactive --agree-tos --email $EMAIL --redirect
-    
+
     if [ $? -eq 0 ]; then
         print_success "SSL certificate obtained and configured"
     else
@@ -200,30 +200,30 @@ setup_ssl() {
 # Function to setup automatic certificate renewal
 setup_renewal() {
     print_status "Setting up automatic certificate renewal..."
-    
+
     # Add cron job for certificate renewal
     (crontab -l 2>/dev/null; echo "0 12 * * * /usr/bin/certbot renew --quiet") | crontab -
-    
+
     print_success "Automatic renewal configured"
 }
 
 # Function to configure firewall
 configure_firewall() {
     print_status "Configuring firewall..."
-    
+
     if command -v ufw &> /dev/null; then
         # Check if UFW is installed and available
         if ufw status >/dev/null 2>&1; then
             # Enable UFW if not already enabled (with --force to avoid prompts)
             ufw --force enable >/dev/null 2>&1 || true
-            
+
             # Allow Nginx Full profile (HTTP and HTTPS)
             ufw allow 'Nginx Full' >/dev/null 2>&1 || ufw allow 80/tcp >/dev/null 2>&1 || true
             ufw allow 443/tcp >/dev/null 2>&1 || true
-            
+
             # Allow SSH to prevent lockout
             ufw allow OpenSSH >/dev/null 2>&1 || ufw allow 22/tcp >/dev/null 2>&1 || true
-            
+
             print_success "UFW firewall configured"
         else
             print_warning "UFW is not properly configured. Manually allowing ports..."
@@ -237,7 +237,7 @@ configure_firewall() {
         print_warning "UFW not found. Please ensure ports 80, 443, and 22 are open"
         print_warning "You may need to configure your firewall manually:"
         echo "  - Port 80 (HTTP)"
-        echo "  - Port 443 (HTTPS)" 
+        echo "  - Port 443 (HTTPS)"
         echo "  - Port 22 (SSH)"
     fi
 }
@@ -245,7 +245,7 @@ configure_firewall() {
 # Function to check if app is running
 check_app() {
     print_status "Checking if your application is running on port $APP_PORT..."
-    
+
     if curl -s http://localhost:$APP_PORT > /dev/null; then
         print_success "Application is running on port $APP_PORT"
     else
@@ -258,7 +258,7 @@ check_app() {
 # Function to test the setup
 test_setup() {
     print_status "Testing the setup..."
-    
+
     # Test HTTP redirect
     HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" http://$DOMAIN)
     if [ "$HTTP_STATUS" = "301" ] || [ "$HTTP_STATUS" = "302" ]; then
@@ -266,7 +266,7 @@ test_setup() {
     else
         print_warning "HTTP redirect test returned status: $HTTP_STATUS"
     fi
-    
+
     # Test HTTPS
     HTTPS_STATUS=$(curl -s -o /dev/null -w "%{http_code}" https://$DOMAIN)
     if [ "$HTTPS_STATUS" = "200" ]; then
@@ -282,19 +282,19 @@ main() {
     echo "  College Chatbot - Reverse Proxy Setup"
     echo "============================================"
     echo ""
-    
+
     load_env_file
-    
+
     # Prompt for email if not set
     if [ "$EMAIL" = "your-email@example.com" ]; then
         echo "Please enter your email address for Let's Encrypt SSL certificates:"
         read -p "Email: " EMAIL
         echo ""
     fi
-    
+
     check_root
     check_dns
-    
+
     echo "This script will:"
     echo "  1. Install Nginx"
     echo "  2. Install Certbot for SSL certificates"
@@ -308,9 +308,9 @@ main() {
     echo "App Port: $APP_PORT"
     echo "Email: $EMAIL"
     echo ""
-    
+
     print_status "Proceeding with automatic setup..."
-    
+
     install_nginx
     install_certbot
     create_nginx_config
@@ -319,7 +319,7 @@ main() {
     setup_renewal
     check_app
     test_setup
-    
+
     echo ""
     print_success "Reverse proxy setup completed successfully!"
     echo ""
@@ -374,4 +374,4 @@ case "${1:-}" in
         show_help
         exit 1
         ;;
-esac 
+esac

@@ -83,7 +83,7 @@ function Import-AndValidateEnvFile {
     }
 
     Write-Status "Loading environment variables from .env file..."
-    
+
     try {
         Get-Content ".env" | ForEach-Object {
             if ($_ -match "^\s*([^#=]+)=(.*)$") {
@@ -125,7 +125,7 @@ function Import-AndValidateEnvFile {
         Write-Host "You can use example.env as a reference."
         exit 1
     }
-    
+
     Write-Success "All required environment variables are set"
 }
 
@@ -222,7 +222,7 @@ function Start-Deployment {
 
     # Check prerequisites
     Test-Docker
-    
+
     # Load and validate environment variables from .env file
     Import-AndValidateEnvFile
 

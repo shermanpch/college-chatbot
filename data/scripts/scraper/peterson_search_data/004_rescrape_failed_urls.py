@@ -4,8 +4,8 @@ import sys
 
 from dotenv import load_dotenv
 from firecrawl import FirecrawlApp, JsonConfig
-
 from models import ExtractSchema
+
 from projectutils.env import setup_project_environment
 from projectutils.logger import setup_logger
 
