@@ -289,8 +289,7 @@ async def _generate_cost_breakdown_chart(colleges_data: list[dict]) -> dict | No
                 x=college_names_for_plot,
                 y=all_in_state_tuitions,
                 marker_color="lightgreen",
-                hovertemplate="<b>%{text}</b><br>In-State Tuition: $%{y:,.0f}<extra></extra>",
-                text=full_college_names_for_hover,
+                hovertemplate="In-State Tuition: $%{y:,.0f}<extra></extra>",
             )
         )
 
@@ -301,8 +300,7 @@ async def _generate_cost_breakdown_chart(colleges_data: list[dict]) -> dict | No
                 x=college_names_for_plot,
                 y=all_out_of_state_tuitions,
                 marker_color="lightsalmon",
-                hovertemplate="<b>%{text}</b><br>Out-of-State Tuition: $%{y:,.0f}<extra></extra>",
-                text=full_college_names_for_hover,
+                hovertemplate="Out-of-State Tuition: $%{y:,.0f}<extra></extra>",
             )
         )
 
@@ -313,8 +311,7 @@ async def _generate_cost_breakdown_chart(colleges_data: list[dict]) -> dict | No
                 x=college_names_for_plot,
                 y=all_private_tuitions,
                 marker_color="lightcoral",
-                hovertemplate="<b>%{text}</b><br>Private Tuition: $%{y:,.0f}<extra></extra>",
-                text=full_college_names_for_hover,
+                hovertemplate="Private Tuition: $%{y:,.0f}<extra></extra>",
             )
         )
 
@@ -325,8 +322,7 @@ async def _generate_cost_breakdown_chart(colleges_data: list[dict]) -> dict | No
             x=college_names_for_plot,
             y=all_financial_aid,
             marker_color="lightblue",
-            hovertemplate="<b>%{text}</b><br>Avg. Aid: $%{y:,.0f}<extra></extra>",
-            text=full_college_names_for_hover,
+            hovertemplate="Avg. Aid: $%{y:,.0f}<extra></extra>",
         )
     )
 
@@ -438,8 +434,7 @@ async def _generate_acceptance_rate_chart(colleges_data: list[dict]) -> dict | N
                 x=list(college_names),
                 y=list(acceptance_rates),
                 marker_color=colors,
-                hovertemplate="<b>%{text}</b><br>Acceptance Rate: %{y:.1f}%<extra></extra>",
-                text=list(full_college_names),  # Store full names for hover
+                hovertemplate="Acceptance Rate: %{y:.1f}%<extra></extra>",
             )
         ]
     )

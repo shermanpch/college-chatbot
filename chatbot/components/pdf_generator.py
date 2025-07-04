@@ -836,7 +836,7 @@ def _extract_top_5_college_details(messages: list[dict]) -> list[str]:
                 r"\[([^\]]+)\]\([^\)]+\)", r"\1", content
             )  # Remove markdown links
             content = re.sub(
-                r"🌐 \*\*Click college name above to view official page\*\*\n?",
+                r"🌐 \*\*Click college name above to view Peterson's page\*\*\n?",
                 "",
                 content,
             )

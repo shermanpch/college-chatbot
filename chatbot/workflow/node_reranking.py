@@ -219,7 +219,7 @@ async def rerank_colleges_node(state: GraphState) -> dict[str, Any]:
             # Make college name clickable if URL is available, but keep markdown file functionality
             if source_url:
                 clickable_college_name = f"[{college_name}]({source_url})"
-                card_content = f"### Rank {rank}: {clickable_college_name}\n**Reasoning:** {reason}\n\n🌐 **Click college name above to view official page**\n📄 **Click to View:** {college_name} Report"
+                card_content = f"### Rank {rank}: {clickable_college_name}\n**Reasoning:** {reason}\n\n🌐 **Click college name above to view Peterson's page**\n📄 **Click to View:** {college_name} Report"
             else:
                 card_content = f"### Rank {rank}: {college_name}\n**Reasoning:** {reason}\n\n📄 **Click to View:** {college_name} Report"
 
