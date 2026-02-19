@@ -45,13 +45,6 @@ The College Chatbot is a Chainlit-powered web application that helps students na
    ```
 
 3. **Deploy:**
-
-   **Windows (PowerShell):**
-   ```powershell
-   .\deploy.ps1
-   ```
-
-   **macOS/Linux:**
    ```bash
    ./deploy.sh
    ```
@@ -93,19 +86,8 @@ TOKENIZERS_PARALLELISM=False
 
 ## Container Management
 
-### Using Deployment Scripts
+### Using Deployment Script
 
-**Windows (PowerShell):**
-```powershell
-.\deploy.ps1                   # Deploy application
-.\deploy.ps1 -Logs             # View container logs
-.\deploy.ps1 -FollowLogs       # Follow container logs in real-time
-.\deploy.ps1 -Status           # Check container status
-.\deploy.ps1 -Stop             # Stop container
-.\deploy.ps1 -Help             # See all options
-```
-
-**macOS/Linux:**
 ```bash
 ./deploy.sh                    # Deploy application
 ./deploy.sh --logs             # View container logs
@@ -147,53 +129,11 @@ docker rm college-chatbot-container
 
 3. **Monitor Logs**
    ```bash
-   # Using deploy scripts
-   ./deploy.sh --follow-logs      # Linux/macOS
-   .\deploy.ps1 -FollowLogs      # Windows PowerShell
+   ./deploy.sh --follow-logs
 
    # Or using Docker directly
    docker logs -f college-chatbot-container
    ```
-
-## Production Deployment
-
-### Prerequisites
-
-1. **Linux Server**: Ubuntu 20.04+ or Debian 10+ recommended
-2. **Domain Name**: A registered domain pointing to your server's IP address
-3. **Root Access**: Sudo privileges on your server
-
-### Quick Production Setup
-
-1. **Configure DNS** - Point your domain to your server:
-   - `your-domain.com` → your_server_ip
-   - `www.your-domain.com` → your_server_ip
-
-2. **Deploy with SSL:**
-   ```bash
-   # Set up environment
-   cp example.env .env
-   # Edit .env with:
-   # OPENROUTER_API_KEY=your_api_key
-   # OPENROUTER_SELF_RETRIEVAL_MODEL=openai/gpt-4o-mini
-   # DOMAIN=your-domain.com
-   # SSL_EMAIL=your-email@example.com
-
-   # Deploy with automatic SSL setup
-   ./deploy.sh --deploy-with-proxy
-   ```
-
-3. **Access:** `https://your-domain.com`
-
-**Windows users:** Use `.\deploy.ps1 -DeployWithProxy` for setup information, but deploy on a Linux server for production.
-
-### Production Features
-
-- **SSL/HTTPS**: Free certificates from Let's Encrypt
-- **Auto-renewal**: Certificates renew automatically
-- **Security Headers**: Protection against web attacks
-- **WebSocket Support**: Real-time Chainlit features
-- **Health Monitoring**: Built-in endpoint at `/health`
 
 ## Development Setup
 
@@ -323,7 +263,6 @@ graph TD
 - **LLM**: OpenRouter API (GPT-4o-mini) - Natural language processing
 - **Search**: Hybrid semantic + keyword search
 - **Containerization**: Docker - Easy deployment
-- **Reverse Proxy**: Nginx with SSL (production)
 - **Code Quality**: Ruff + Pre-commit hooks
 
 ## Project Structure
@@ -342,10 +281,8 @@ college-chatbot/
 ├── pyproject.toml             # Python project configuration and dependencies
 ├── requirements.txt           # Docker/deployment dependencies
 ├── Dockerfile                 # Docker configuration
-├── deploy.sh / deploy.ps1     # Deployment scripts
-├── setup-reverse-proxy.sh     # Reverse proxy setup script
+├── deploy.sh                  # Deployment script
 ├── example.env                # Environment template
-├── REVERSE_PROXY_SETUP.md     # Detailed proxy documentation
 └── README.md                  # This file
 ```
 
@@ -366,36 +303,6 @@ college-chatbot/
 **Performance issues:**
 - Monitor resources: `docker stats college-chatbot-container`
 - Increase Docker memory allocation if needed
-
-### Production Issues
-
-**502 Bad Gateway:**
-```bash
-# Check if app is running
-curl http://localhost:8000
-docker ps
-./deploy.sh  # Restart if needed
-```
-
-**SSL Certificate Issues:**
-```bash
-# Check DNS propagation
-dig your-domain.com
-
-# Test certificate renewal
-sudo certbot renew --dry-run
-```
-
-**Nginx Issues:**
-```bash
-# Check status and logs
-sudo systemctl status nginx
-sudo tail -f /var/log/nginx/error.log
-
-# Test and restart
-sudo nginx -t
-sudo systemctl restart nginx
-```
 
 ## Advanced Topics
 
@@ -421,18 +328,6 @@ docker run -d -p 8000:8000 \
 - **Model**: Modify `OPENROUTER_SELF_RETRIEVAL_MODEL` for different LLM
 - **Data**: Replace college data in `data/chatbot/peterson_rag_documents/`
 
-### Manual Reverse Proxy Setup
-
-For advanced users who want to set up the reverse proxy separately:
-
-```bash
-# First deploy your application
-./deploy.sh
-
-# Then setup reverse proxy manually
-sudo ./setup-reverse-proxy.sh
-```
-
 ## Contributing
 
 1. Fork the repository
@@ -442,20 +337,10 @@ sudo ./setup-reverse-proxy.sh
 5. Make your changes (linting runs automatically on commit)
 6. Submit a pull request
 
-## Documentation
-
-- **REVERSE_PROXY_SETUP.md**: Detailed reverse proxy setup guide
-- **example.env**: Complete environment configuration template
-- **deploy.sh / deploy.ps1**: Automated deployment scripts with help options
-- **setup-reverse-proxy.sh**: Automated reverse proxy setup script
-
 ## Security
 
 - API keys are never committed to version control
-- Application runs locally by default (development)
 - Environment variables are loaded from `.env` file
-- SSL/TLS encryption in production via Let's Encrypt
-- Security headers and firewall configuration in production
 - Regular dependency updates recommended
 
 ## License
@@ -469,8 +354,7 @@ If you encounter issues:
 1. Check container logs: `docker logs college-chatbot-container`
 2. Verify prerequisites (Docker, API keys)
 3. Review troubleshooting section above
-4. For production issues, check `REVERSE_PROXY_SETUP.md`
-5. Open an issue on GitHub
+4. Open an issue on GitHub
 
 ---
 

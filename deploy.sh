@@ -210,7 +210,6 @@ show_help() {
     echo "  ./deploy.sh --follow-logs        - Follow container logs in real-time"
     echo "  ./deploy.sh --stop               - Stop the container"
     echo "  ./deploy.sh --status             - Show container status"
-    echo "  ./deploy.sh --deploy-with-proxy  - Deploy app and setup reverse proxy"
     echo ""
     echo "Environment Setup:"
     echo "  This script requires a .env file with your API credentials."
@@ -226,81 +225,7 @@ show_help() {
     echo "  3. Run the deployment script:"
     echo "     ./deploy.sh"
     echo ""
-    echo "Reverse Proxy Setup:"
-    echo "  For production deployment with a custom domain:"
-    echo "  1. Configure DNS records to point your domain to this server"
-    echo "  2. Add DOMAIN and SSL_EMAIL to your .env file:"
-    echo "     DOMAIN=your-domain.com"
-    echo "     SSL_EMAIL=your-email@example.com"
-    echo "  3. Run: ./deploy.sh --deploy-with-proxy"
-    echo "  4. Follow the prompts to configure SSL certificates"
-    echo ""
     echo "Note: This script automatically detects if sudo is needed for Docker commands."
-}
-
-# Function to validate reverse proxy configuration
-validate_proxy_config() {
-    local missing_vars=()
-    local warnings=()
-
-    # Check if production deployment variables are set
-    if [ -z "$DOMAIN" ] || [ "$DOMAIN" = "college-coach.dev" ]; then
-        warnings+=("DOMAIN is not set or using default value")
-    fi
-
-    if [ -z "$SSL_EMAIL" ] || [ "$SSL_EMAIL" = "your-email@example.com" ]; then
-        warnings+=("SSL_EMAIL is not set or using example value")
-    fi
-
-    if [ ${#warnings[@]} -gt 0 ]; then
-        print_warning "Production deployment configuration warnings:"
-        for warning in "${warnings[@]}"; do
-            echo "  - ${warning}"
-        done
-        echo ""
-        echo "Please update your .env file with your actual domain and email:"
-        echo "  DOMAIN=your-domain.com"
-        echo "  SSL_EMAIL=your-email@example.com"
-        echo ""
-        echo "The setup script will prompt you for these values if not set."
-        echo ""
-    fi
-}
-
-# Function to setup reverse proxy
-setup_reverse_proxy() {
-    print_status "Setting up reverse proxy..."
-
-    validate_proxy_config
-
-    if [ ! -f "setup-reverse-proxy.sh" ]; then
-        print_error "setup-reverse-proxy.sh not found!"
-        print_error "Please ensure the reverse proxy setup script is in the same directory."
-        exit 1
-    fi
-
-    # Make the script executable
-    chmod +x setup-reverse-proxy.sh
-
-    if [ "$EUID" -eq 0 ]; then
-        print_status "Running reverse proxy setup as root..."
-        if ./setup-reverse-proxy.sh; then
-            print_success "Reverse proxy setup completed successfully"
-        else
-            print_error "Reverse proxy setup failed. Check the logs above for details."
-            print_warning "You can try running the setup manually with: sudo ./setup-reverse-proxy.sh"
-            exit 1
-        fi
-    else
-        print_status "Running reverse proxy setup with sudo..."
-        if sudo ./setup-reverse-proxy.sh; then
-            print_success "Reverse proxy setup completed successfully"
-        else
-            print_error "Reverse proxy setup failed. Check the logs above for details."
-            print_warning "You can try running the setup manually with: sudo ./setup-reverse-proxy.sh"
-            exit 1
-        fi
-    fi
 }
 
 # Handle command line arguments
@@ -326,11 +251,6 @@ case "${1:-}" in
         ;;
     --status)
         show_status
-        exit 0
-        ;;
-    --deploy-with-proxy)
-        main
-        setup_reverse_proxy
         exit 0
         ;;
     "")
