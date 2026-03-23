@@ -38,19 +38,21 @@ The College Chatbot is a Chainlit-powered web application that helps students na
 
 2. **Set up environment:**
    ```bash
-   cp example.env .env
-   # Edit .env with your API key and model:
+   cp .env.example .env
+   # Edit .env with your API key, model, and tunnel token:
    # OPENROUTER_API_KEY=your_api_key_here
    # OPENROUTER_SELF_RETRIEVAL_MODEL=openai/gpt-4o-mini
+   # TUNNEL_TOKEN=your_tunnel_token_here
    ```
 
 3. **Deploy:**
    ```bash
    ./deploy.sh
    ```
+   This builds the app and starts both the chatbot and Cloudflare Tunnel containers.
 
 4. **Access the application:**
-   Open your browser to `http://localhost:8000`
+   Via your configured domain (e.g., `https://college-coach.dev`), or uncomment `ports` in `docker-compose.yml` for local access at `http://localhost:8000`.
 
 ## Configuration
 
@@ -63,6 +65,9 @@ The application uses a `.env` file for configuration. Copy `example.env` to `.en
 # OpenRouter API Configuration (Required)
 OPENROUTER_API_KEY=your_openrouter_api_key_here
 OPENROUTER_SELF_RETRIEVAL_MODEL=openai/gpt-4o-mini
+
+# Cloudflare Tunnel (Required for production)
+TUNNEL_TOKEN=your_tunnel_token_here
 ```
 
 **Optional Configuration:**
@@ -89,27 +94,31 @@ TOKENIZERS_PARALLELISM=False
 ### Using Deployment Script
 
 ```bash
-./deploy.sh                    # Deploy application
-./deploy.sh --logs             # View container logs
-./deploy.sh --follow-logs      # Follow container logs in real-time
-./deploy.sh --status           # Check container status
-./deploy.sh --stop             # Stop container
+./deploy.sh                    # Build and start all services (app + tunnel)
+./deploy.sh --logs             # View logs from all services
+./deploy.sh --follow-logs      # Follow logs in real-time
+./deploy.sh --status           # Check service status
+./deploy.sh --stop             # Stop all services
+./deploy.sh --down             # Stop and remove all containers
 ./deploy.sh --help             # See all options
 ```
 
-### Manual Container Commands
+### Manual Docker Compose Commands
 
 ```bash
 # View logs
-docker logs college-chatbot-container
+docker compose logs
 
-# Stop/start container
-docker stop college-chatbot-container
-docker start college-chatbot-container
+# View logs for a specific service
+docker compose logs cloudflared
+docker compose logs app
 
-# Remove container
-docker stop college-chatbot-container
-docker rm college-chatbot-container
+# Stop/start services
+docker compose stop
+docker compose start
+
+# Stop and remove containers
+docker compose down
 ```
 
 ## Testing the Application
@@ -131,8 +140,8 @@ docker rm college-chatbot-container
    ```bash
    ./deploy.sh --follow-logs
 
-   # Or using Docker directly
-   docker logs -f college-chatbot-container
+   # Or using Docker Compose directly
+   docker compose logs -f
    ```
 
 ## Development Setup
@@ -262,7 +271,8 @@ graph TD
 - **Vector Database**: ChromaDB - College data retrieval
 - **LLM**: OpenRouter API (GPT-4o-mini) - Natural language processing
 - **Search**: Hybrid semantic + keyword search
-- **Containerization**: Docker - Easy deployment
+- **Containerization**: Docker Compose - Multi-service deployment
+- **Tunnel**: Cloudflare Tunnel - Secure public access
 - **Code Quality**: Ruff + Pre-commit hooks
 
 ## Project Structure
@@ -280,9 +290,10 @@ college-chatbot/
 ├── public/                    # Static assets (logos, CSS)
 ├── pyproject.toml             # Python project configuration and dependencies
 ├── requirements.txt           # Docker/deployment dependencies
-├── Dockerfile                 # Docker configuration
+├── docker-compose.yml         # Docker Compose orchestration (app + tunnel)
+├── Dockerfile                 # App container configuration
 ├── deploy.sh                  # Deployment script
-├── example.env                # Environment template
+├── .env.example               # Environment template
 └── README.md                  # This file
 ```
 
@@ -291,40 +302,37 @@ college-chatbot/
 ### Common Issues
 
 **Container won't start:**
-- Check `.env` file exists with required API keys
-- Verify port 8000 is available
+- Check `.env` file exists with required API keys and `TUNNEL_TOKEN`
 - Check Docker Desktop is running (Windows/macOS)
+- Check logs: `docker compose logs`
 
-**Application not accessible:**
-- Verify container is running: `docker ps`
-- Check firewall settings
-- Try `http://127.0.0.1:8000` instead of localhost
+**Tunnel not connecting:**
+- Verify `TUNNEL_TOKEN` is set correctly in `.env`
+- Check tunnel logs: `docker compose logs cloudflared`
+- Ensure ingress rules in Cloudflare dashboard point to `http://app:8000`
+
+**Application not accessible via domain:**
+- Verify both containers are running: `docker compose ps`
+- Check tunnel status in Cloudflare dashboard (Zero Trust > Tunnels)
+- For local testing, uncomment `ports` in `docker-compose.yml` and access `http://localhost:8000`
 
 **Performance issues:**
-- Monitor resources: `docker stats college-chatbot-container`
+- Monitor resources: `docker stats`
 - Increase Docker memory allocation if needed
 
 ## Advanced Topics
 
-### Manual Docker Deployment
+### Local Development Without Tunnel
 
-If you prefer to run Docker commands manually instead of using the deployment scripts:
+To run only the app container with direct port access:
 
 ```bash
-# Build the image
-docker build -t college-chatbot .
-
-# Run the container
-docker run -d -p 8000:8000 \
-  -e OPENROUTER_API_KEY="your_api_key_here" \
-  -e OPENROUTER_SELF_RETRIEVAL_MODEL="openai/gpt-4o-mini" \
-  --name college-chatbot-container \
-  college-chatbot
+# Uncomment the ports block in docker-compose.yml, then:
+docker compose up -d app
 ```
 
 ### Custom Configuration
 
-- **Port**: Change `PORT` in `.env` or Docker run command
 - **Model**: Modify `OPENROUTER_SELF_RETRIEVAL_MODEL` for different LLM
 - **Data**: Replace college data in `data/chatbot/peterson_rag_documents/`
 
@@ -351,8 +359,8 @@ This project is open source. Please check the license file for details.
 
 If you encounter issues:
 
-1. Check container logs: `docker logs college-chatbot-container`
-2. Verify prerequisites (Docker, API keys)
+1. Check logs: `docker compose logs`
+2. Verify prerequisites (Docker, API keys, tunnel token)
 3. Review troubleshooting section above
 4. Open an issue on GitHub
 

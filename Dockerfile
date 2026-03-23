@@ -30,7 +30,6 @@ RUN pip install --no-cache-dir -e .
 # These change less frequently than source code
 COPY .chainlit .chainlit
 COPY chainlit.md chainlit.md
-COPY .env .env
 
 # Create data directory structure and copy data files
 # Data changes less frequently than source code

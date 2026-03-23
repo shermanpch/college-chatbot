@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: college-chatbot-app
+    env_file:
+      - .env
+    expose:
+      - "8000"
+    # Uncomment for local dev access without tunnel:
+    # ports:
+    #   - "8000:8000"
+    restart: unless-stopped
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: college-chatbot-tunnel
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    depends_on:
+      - app
+    restart: unless-stopped

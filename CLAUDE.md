@@ -23,9 +23,11 @@ ruff format .
 pre-commit install
 pre-commit run --all-files
 
-# Docker
-docker build -t college-chatbot .
-docker run -d -p 8000:8000 --env-file .env college-chatbot
+# Docker Compose (production with Cloudflare Tunnel)
+docker compose up -d --build
+
+# Docker Compose (local dev, app only)
+docker compose up -d --build app
 ```
 
 ## Architecture

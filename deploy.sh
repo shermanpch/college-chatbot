@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# College Chatbot - Docker Deployment Script
-# This script automates the Docker build and deployment process
+# College Chatbot - Docker Compose Deployment Script
+# This script automates the Docker Compose build and deployment process
 
 set -e  # Exit on any error
 
@@ -12,20 +12,12 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Configuration
-IMAGE_NAME="college-chatbot"
-CONTAINER_NAME="college-chatbot-container"
-PORT="8000"
-
 # Determine if sudo is needed for Docker
 DOCKER_CMD="docker"
 if ! docker ps &> /dev/null 2>&1; then
     if sudo docker ps &> /dev/null 2>&1; then
         DOCKER_CMD="sudo docker"
-        print_warning() {
-            echo -e "${YELLOW}[WARNING]${NC} Using sudo for Docker commands. You may be prompted for your password."
-        }
-        print_warning
+        echo -e "${YELLOW}[WARNING]${NC} Using sudo for Docker commands. You may be prompted for your password."
     else
         echo "Cannot access Docker daemon with or without sudo. Please check Docker installation."
         exit 1
@@ -49,32 +41,35 @@ print_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
 
-# Function to check if Docker is installed
+# Function to check if Docker and Docker Compose are available
 check_docker() {
     if ! command -v docker &> /dev/null; then
         print_error "Docker is not installed. Please install Docker first."
-        echo "Run: sudo apt update && sudo apt install -y docker.io"
         exit 1
     fi
 
-    # Test Docker access (already done above to set DOCKER_CMD)
-    print_success "Docker is available"
+    if ! $DOCKER_CMD compose version &> /dev/null; then
+        print_error "Docker Compose v2 is required. Please update Docker."
+        exit 1
+    fi
+
+    print_success "Docker and Docker Compose are available"
 }
 
 # Function to load and validate .env file
 load_and_validate_env() {
-    # Check if .env file exists
     if [ ! -f ".env" ]; then
         print_error ".env file not found!"
         echo ""
         echo "To set up your environment:"
-        echo "  1. Copy the example file: cp example.env .env"
-        echo "  2. Edit .env with your API credentials"
+        echo "  1. Copy the example file: cp .env.example .env"
+        echo "  2. Edit .env with your API credentials and tunnel token"
         echo "  3. Run this script again"
         echo ""
         echo "Required variables in .env:"
         echo "  OPENROUTER_API_KEY=your_api_key_here"
         echo "  OPENROUTER_SELF_RETRIEVAL_MODEL=openai/gpt-4o-mini"
+        echo "  TUNNEL_TOKEN=your_tunnel_token_here"
         exit 1
     fi
 
@@ -98,6 +93,10 @@ load_and_validate_env() {
         missing_vars+=("OPENROUTER_SELF_RETRIEVAL_MODEL")
     fi
 
+    if [ -z "$TUNNEL_TOKEN" ]; then
+        missing_vars+=("TUNNEL_TOKEN")
+    fi
+
     if [ ${#missing_vars[@]} -gt 0 ]; then
         print_error "Required environment variables are missing from .env file: ${missing_vars[*]}"
         echo ""
@@ -106,72 +105,25 @@ load_and_validate_env() {
             echo "  ${var}=your_value_here"
         done
         echo ""
-        echo "You can use example.env as a reference."
+        echo "You can use .env.example as a reference."
         exit 1
     fi
 
     print_success "All required environment variables are set"
 }
 
-# Function to stop and remove existing container
-cleanup_existing() {
-    if $DOCKER_CMD ps -a --format '{{.Names}}' | grep -q "^${CONTAINER_NAME}$"; then
-        print_status "Stopping and removing existing container..."
-        $DOCKER_CMD stop $CONTAINER_NAME 2>/dev/null || true
-        $DOCKER_CMD rm $CONTAINER_NAME 2>/dev/null || true
-        print_success "Cleaned up existing container"
-    fi
-}
-
-# Function to build Docker image
-build_image() {
-    print_status "Building Docker image..."
-    if $DOCKER_CMD build -t $IMAGE_NAME . ; then
-        print_success "Docker image built successfully"
-    else
-        print_error "Failed to build Docker image"
-        exit 1
-    fi
-}
-
-# Function to run container
-run_container() {
-    print_status "Starting container..."
-
-    if $DOCKER_CMD run -d \
-        -p $PORT:$PORT \
-        -e OPENROUTER_API_KEY="$OPENROUTER_API_KEY" \
-        -e OPENROUTER_SELF_RETRIEVAL_MODEL="$OPENROUTER_SELF_RETRIEVAL_MODEL" \
-        --name $CONTAINER_NAME \
-        $IMAGE_NAME; then
-        print_success "Container started successfully"
-        print_success "Application is accessible at: http://localhost:$PORT"
-    else
-        print_error "Failed to start container"
-        exit 1
-    fi
-}
-
 # Function to show container status
 show_status() {
     echo ""
-    print_status "Container status:"
-    $DOCKER_CMD ps --filter "name=$CONTAINER_NAME" --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
-
+    print_status "Service status:"
+    $DOCKER_CMD compose ps
     echo ""
-    print_status "To view logs, run:"
-    echo "./deploy.sh --logs"
-    echo "Or: $DOCKER_CMD logs $CONTAINER_NAME"
-
-    echo ""
-    print_status "To follow logs in real-time, run:"
-    echo "./deploy.sh --follow-logs"
-    echo "Or: $DOCKER_CMD logs -f $CONTAINER_NAME"
-
-    echo ""
-    print_status "To stop the container, run:"
-    echo "./deploy.sh --stop"
-    echo "Or: $DOCKER_CMD stop $CONTAINER_NAME"
+    print_status "Useful commands:"
+    echo "  ./deploy.sh --logs          View logs from all services"
+    echo "  ./deploy.sh --follow-logs   Follow logs in real-time"
+    echo "  ./deploy.sh --stop          Stop all services"
+    echo "  ./deploy.sh --down          Stop and remove all containers"
+    echo "  ./deploy.sh --status        Show service status"
 }
 
 # Main deployment function
@@ -180,48 +132,42 @@ main() {
     echo "  College Chatbot Deployment"
     echo "============================================"
 
-    # Check prerequisites
     check_docker
-
-    # Load and validate environment variables from .env file
     load_and_validate_env
 
-    # Clean up any existing deployment
-    cleanup_existing
+    print_status "Building and starting services..."
+    $DOCKER_CMD compose up -d --build
 
-    # Build and run
-    build_image
-    run_container
-
-    # Show status
+    print_success "Services started successfully"
     show_status
-
-    print_success "Deployment completed successfully!"
+    print_success "Deployment completed!"
 }
 
 # Show help
 show_help() {
-    echo "College Chatbot - Docker Deployment Script"
+    echo "College Chatbot - Docker Compose Deployment Script"
     echo ""
     echo "Usage:"
-    echo "  ./deploy.sh                      - Deploy the application"
-    echo "  ./deploy.sh --help               - Show this help message"
-    echo "  ./deploy.sh --logs               - Show container logs"
-    echo "  ./deploy.sh --follow-logs        - Follow container logs in real-time"
-    echo "  ./deploy.sh --stop               - Stop the container"
-    echo "  ./deploy.sh --status             - Show container status"
+    echo "  ./deploy.sh                - Build and start all services (app + tunnel)"
+    echo "  ./deploy.sh --help         - Show this help message"
+    echo "  ./deploy.sh --logs         - Show logs from all services"
+    echo "  ./deploy.sh --follow-logs  - Follow logs in real-time"
+    echo "  ./deploy.sh --stop         - Stop all services"
+    echo "  ./deploy.sh --down         - Stop and remove all containers"
+    echo "  ./deploy.sh --status       - Show service status"
     echo ""
     echo "Environment Setup:"
-    echo "  This script requires a .env file with your API credentials."
+    echo "  This script requires a .env file with your credentials."
     echo ""
     echo "  Required variables in .env:"
     echo "    OPENROUTER_API_KEY=your_api_key_here"
     echo "    OPENROUTER_SELF_RETRIEVAL_MODEL=openai/gpt-4o-mini"
+    echo "    TUNNEL_TOKEN=your_tunnel_token_here"
     echo ""
     echo "Setup Steps:"
     echo "  1. Copy the example environment file:"
-    echo "     cp example.env .env"
-    echo "  2. Edit .env with your API credentials"
+    echo "     cp .env.example .env"
+    echo "  2. Edit .env with your API credentials and tunnel token"
     echo "  3. Run the deployment script:"
     echo "     ./deploy.sh"
     echo ""
@@ -235,18 +181,24 @@ case "${1:-}" in
         exit 0
         ;;
     --logs)
-        $DOCKER_CMD logs $CONTAINER_NAME
+        $DOCKER_CMD compose logs
         exit 0
         ;;
     --follow-logs)
-        print_status "Following container logs in real-time (press Ctrl+C to exit)..."
-        $DOCKER_CMD logs -f $CONTAINER_NAME
+        print_status "Following logs in real-time (press Ctrl+C to exit)..."
+        $DOCKER_CMD compose logs -f
         exit 0
         ;;
     --stop)
-        print_status "Stopping container..."
-        $DOCKER_CMD stop $CONTAINER_NAME
-        print_success "Container stopped"
+        print_status "Stopping services..."
+        $DOCKER_CMD compose stop
+        print_success "Services stopped"
+        exit 0
+        ;;
+    --down)
+        print_status "Stopping and removing containers..."
+        $DOCKER_CMD compose down
+        print_success "All containers removed"
         exit 0
         ;;
     --status)
