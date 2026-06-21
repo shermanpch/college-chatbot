@@ -52,13 +52,13 @@ The College Chatbot is a Chainlit-powered web application that helps students na
    This builds the app and starts both the chatbot and Cloudflare Tunnel containers.
 
 4. **Access the application:**
-   Via your configured domain (e.g., `https://college-coach.dev`), or uncomment `ports` in `docker-compose.yml` for local access at `http://localhost:8000`.
+   Via your configured domain (e.g., `https://college-chatbot.com`), or uncomment `ports` in `docker-compose.yml` for local access at `http://localhost:8000`.
 
 ## Configuration
 
 ### Environment Variables
 
-The application uses a `.env` file for configuration. Copy `example.env` to `.env` and configure:
+The application uses a `.env` file for configuration. Copy `.env.example` to `.env` and configure:
 
 **Required Variables:**
 ```bash
@@ -77,9 +77,12 @@ OPENROUTER_MODEL=openai/gpt-4o-mini
 OPENROUTER_RAGAS_MODEL=openai/gpt-4o-mini
 
 # Application settings
-PORT=8000
-HOST=localhost
 LOG_LEVEL=INFO
+
+# Host/port are not read from .env; the Dockerfile CMD hardcodes them.
+# To change host/port, edit the Dockerfile CMD or the chainlit run flags.
+# PORT=8000
+# HOST=localhost
 
 # External services (optional)
 FIRECRAWL_API_KEY=your_firecrawl_api_key_here
@@ -159,7 +162,7 @@ docker compose down
 
 2. **Configure environment:**
    ```bash
-   cp example.env .env
+   cp .env.example .env
    # Edit .env with your API key and model
    ```
 
@@ -281,7 +284,9 @@ graph TD
 college-chatbot/
 ├── chatbot/                   # Main application code
 │   ├── app.py                 # Chainlit application entry point
+│   ├── config.py              # Path and model configuration
 │   ├── components/            # Core chatbot components
+│   ├── evaluation/            # RAGAS evaluation (ragas_eval.py, test_questions.py)
 │   ├── prompts/               # LLM prompts and templates
 │   ├── utils/                 # Utility functions and helpers
 │   └── workflow/              # Workflow management and state

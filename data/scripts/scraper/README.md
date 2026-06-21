@@ -4,23 +4,6 @@ This directory contains comprehensive scripts for downloading and scraping vario
 
 ## 🔧 Scrapers Overview
 
-### 📊 [georgia_education_data/](georgia_education_data/)
-**Georgia Education Data Collection**
-Scripts for downloading comprehensive Georgia education data from the GOSA (Governor's Office of Student Achievement) website.
-
-**Main Scripts:**
-- `download_georgia_education_data.py` - Downloads Georgia education data organized by category and year
-- `list_categories.py` - Lists all available data categories from the GOSA website
-
-**Key Features:**
-- 🔍 **Automatic Discovery**: Dynamically discovers all available data categories and years
-- 📁 **Organized Storage**: Files stored by category and year with timestamped filenames
-- 🎯 **Selective Downloads**: Filter downloads by specific categories or years
-- 🔄 **Retry Logic**: Exponential backoff for handling network issues
-- 🧪 **Dry Run Mode**: Preview downloads without actually downloading files
-- 📝 **Comprehensive Logging**: Detailed logging with progress tracking
-- ⚡ **Resume Capability**: Skip existing files to resume interrupted downloads
-
 ### 🏫 [peterson_search_data/](peterson_search_data/)
 **University Data Scraping & Processing**
 Complete pipeline for scraping and processing comprehensive university data from Peterson's college search website.
@@ -68,37 +51,15 @@ pip install -r data/scripts/scraper/requirements.txt
 **Key Dependencies:**
 - `requests` - HTTP requests and web scraping
 - `beautifulsoup4` - HTML parsing
+- `lxml` - HTML/XML parser backend for BeautifulSoup
+- `firecrawl-py` - Batch scraping via the Firecrawl API
 - `selenium` - JavaScript-heavy page handling
-- `pydantic` - Data validation and modeling
-- `pandas` - Data manipulation and CSV handling
+- `fuzzywuzzy` - Fuzzy string matching for URL validation
+- `levenshtein` - String distance backend for fuzzywuzzy
+- `pandas` - Reads university CSV/JSON datasets for URL validation
+- `pydantic` - Schema models for scraped data (`models.py`)
 
 ## 📖 Quick Start Guide
-
-### Georgia Education Data
-
-**1. Explore Available Data:**
-```bash
-python data/scripts/scraper/georgia_education_data/list_categories.py
-```
-
-**2. Download Specific Categories:**
-```bash
-# Download ACT scores for 2023-24
-python data/scripts/scraper/georgia_education_data/download_georgia_education_data.py --categories "ACT Scores" --years "2023-24"
-
-# Download multiple categories
-python data/scripts/scraper/georgia_education_data/download_georgia_education_data.py --categories "ACT Scores,SAT Scores" --years "2023-24,2022-23"
-```
-
-**3. Download All Available Data:**
-```bash
-python data/scripts/scraper/georgia_education_data/download_georgia_education_data.py
-```
-
-**4. Preview Downloads (Dry Run):**
-```bash
-python data/scripts/scraper/georgia_education_data/download_georgia_education_data.py --dry-run
-```
 
 ### Peterson University Data
 
@@ -150,35 +111,16 @@ python data/scripts/scraper/peterson_search_data/007_clean_peterson_data.py
 
 ## 📁 Data Organization & Output
 
-### Georgia Education Data Structure
-```
-data/external/
-├── act_scores/
-│   ├── 2023-24/
-│   │   └── ACT_2023-24_Highest_2025-01-14_16_21_13.csv
-│   ├── 2022-23/
-│   │   └── ACT_2022-23_Highest_2025-01-14_16_22_45.csv
-│   └── ...
-├── advanced_placement_ap_scores/
-│   ├── 2023-24/
-│   │   └── AP_2023-24_2025-01-15_15_03_20.csv
-│   └── ...
-├── georgia_milestones_assessments/
-├── enrollment_data/
-├── graduation_rates/
-├── financial_data/
-└── ...
-```
-
 ### Peterson University Data Structure
 ```
 data/
+├── chatbot/
+│   └── peterson_data.json                      # Final cleaned university dataset
 ├── cleaned/
 │   ├── peterson_university_urls.json           # University search results and URLs
 │   ├── peterson_university_urls_backup.json    # Backup of university URLs
 │   ├── peterson_url_validation_results.json    # URL validation and matching results
-│   ├── peterson_url_validation_results_backup.json # Backup of validation results
-│   └── peterson_data.json                      # Final cleaned university dataset
+│   └── peterson_url_validation_results_backup.json # Backup of validation results
 
 └── external/
     ├── peterson_data/
@@ -187,81 +129,31 @@ data/
         └── *.json                              # Course data scraped using BeautifulSoup
 ```
 
-## 📊 Available Data Categories (Georgia)
-
-The Georgia scraper automatically discovers all available categories from the GOSA website. Common categories include:
-
-**Academic Performance:**
-- ACT Scores, SAT Scores, AP Scores
-- Georgia Milestones Assessments (EOG, EOC)
-- NAEP (National Assessment of Educational Progress)
-
-**Student Demographics & Enrollment:**
-- Enrollment by Grade, Race, Gender
-- English Learners, Students with Disabilities
-- Free and Reduced Lunch Eligibility
-
-**School Performance Metrics:**
-- Attendance Rates, Graduation Rates
-- Dropout Rates, Student Mobility Rates
-- College and Career Readiness
-
-**Financial & Personnel Data:**
-- School Revenues and Expenditures
-- Personnel Counts and Salaries
-- Educator Qualifications and Experience
-
-**Infrastructure & Resources:**
-- Facilities and Technology
-- Class Sizes and Student-Teacher Ratios
-
 ## 🔧 Advanced Usage & Configuration
-
-### Georgia Education Data Scraper
-
-**Command Line Options:**
-```bash
-python download_georgia_education_data.py [OPTIONS]
-
-Options:
-  --categories TEXT    Comma-separated list of categories to download
-  --years TEXT        Comma-separated list of years to download
-  --dry-run          Preview downloads without downloading
-  --help             Show help message
-```
-
-**Configuration Tips:**
-- Use exact category names from `list_categories.py`
-- Year format: "2023-24", "2022-23", etc.
-- Large datasets may take significant time; consider downloading in batches
-- Use dry-run mode to estimate download size and time
 
 ### Peterson University Scraper
 
 **Pipeline Requirements:**
 - University dataset (CSV/JSON) for URL validation
-- Firecrawl API key for batch scraping
+- `FIRECRAWL_API_KEY` environment variable; scripts `003` and `004` exit if it is unset
 - Internet connection for web scraping
 
 **Performance Features:**
-- **Batch Processing**: Scrapes multiple URLs simultaneously using Firecrawl API
+- **Async Batch Submission**: Scripts `003` and `004` submit batch jobs to the Firecrawl API, then you download the results from the Firecrawl dashboard
 - **Smart Validation**: Matches URLs against existing datasets before scraping
-- **Error Recovery**: Automatic identification and re-processing of failed URLs
+- **Error Recovery**: Automatic identification and re-submission of failed URLs
 - **Efficient Storage**: Organized file structure with progress tracking
-- **Resume Capability**: Can resume interrupted scraping jobs
 
 ## 📝 Logging & Monitoring
 
-### Georgia Education Data
-- **Log File**: `logs/georgia_data_download.log`
-- **Content**: Download progress, errors, file information, timing statistics
-- **Levels**: INFO, WARNING, ERROR with detailed timestamps
-
 ### Peterson University Data
+
+Each script derives its log filename from its path relative to the project root, replacing separators with underscores.
+
 - **Log Files**:
-  - `logs/peterson_batch_scraper.log` - Batch scraping progress and job submissions
-  - `logs/peterson_data_cleaner.log` - Data cleaning and extraction progress
-  - `logs/rescrape_failed_urls.log` - Failed URL re-scraping activities
+  - `logs/data_scripts_scraper_peterson_search_data_003_get_peterson_data.log` - Batch scraping progress and job submissions
+  - `logs/data_scripts_scraper_peterson_search_data_004_rescrape_failed_urls.log` - Failed URL re-scraping activities
+  - `logs/data_scripts_scraper_peterson_search_data_007_clean_peterson_data.log` - Data cleaning and extraction progress
 - **Content**: Pipeline progress, URL validation, batch job tracking, data extraction, error recovery
 - **Monitoring**: Real-time progress tracking for each pipeline stage
 
@@ -280,9 +172,7 @@ Options:
 3. **Existing files**: Scripts automatically skip existing files
 
 **Data-Specific Issues:**
-1. **Category names**: Use exact names from `list_categories.py`
-2. **Year formats**: Follow "YYYY-YY" format (e.g., "2023-24")
-3. **Large files**: Some datasets are very large; be patient or use selective downloads
+1. **Large files**: Some datasets are very large; be patient or use selective downloads
 
 ### Performance Optimization
 
@@ -299,12 +189,6 @@ Options:
 
 ## 🔍 Data Quality & Validation
 
-### Georgia Education Data
-- **Automatic validation**: File size and format checks
-- **Timestamp tracking**: All downloads timestamped for version control
-- **Duplicate prevention**: Automatic skipping of existing files
-- **Error logging**: Comprehensive error tracking and reporting
-
 ### Peterson University Data
 - **Pipeline validation**: Multi-stage validation throughout the process
 - **URL matching**: Smart matching against existing university datasets
@@ -316,19 +200,10 @@ Options:
 
 ### Getting Help
 ```bash
-# Georgia scraper help
-python data/scripts/scraper/georgia_education_data/download_georgia_education_data.py --help
-
-# List available categories
-python data/scripts/scraper/georgia_education_data/list_categories.py
-
 # Check Peterson pipeline logs
-tail -f logs/peterson_batch_scraper.log
-tail -f logs/peterson_data_cleaner.log
-tail -f logs/rescrape_failed_urls.log
-
-# Check Georgia scraper logs
-tail -f logs/georgia_data_download.log
+tail -f logs/data_scripts_scraper_peterson_search_data_003_get_peterson_data.log
+tail -f logs/data_scripts_scraper_peterson_search_data_004_rescrape_failed_urls.log
+tail -f logs/data_scripts_scraper_peterson_search_data_007_clean_peterson_data.log
 ```
 
 ### Best Practices
@@ -349,7 +224,7 @@ tail -f logs/georgia_data_download.log
 
 ## 🔄 Updates & Maintenance
 
-- **Regular Updates**: GOSA website structure may change; scripts may need updates
+- **Regular Updates**: Peterson's website structure may change; scripts may need updates
 - **Dependency Management**: Keep dependencies updated for security and compatibility
 - **Log Rotation**: Consider rotating log files for long-term usage
 - **Data Archival**: Plan for long-term storage and archival of downloaded data

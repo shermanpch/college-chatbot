@@ -59,16 +59,16 @@ The entry point is `main_dispatcher_node` (conditional entry point) which routes
 
 ### Components (`chatbot/components/`)
 
-Reusable modules: `vectorstore.py` (ChromaDB init), `retriever.py` (hybrid search), `college_utils.py` (data helpers), `college_reranker.py`, `pdf_generator.py` (ReportLab PDF creation), `feature_analyzer.py`, `suggestion_generator.py`.
+Reusable modules: `vectorstore.py` (ChromaDB init), `retriever.py` (hybrid search), `college_utils.py` (data helpers), `college_reranker.py`, `pdf_generator.py` (ReportLab PDF creation), `feature_analyzer.py`, `suggestion_generator.py`, `clarification_generator.py`, `attributes.py` (SelfQueryRetriever metadata field definitions), `data_loader.py` (university document loading).
 
 ### Prompts (`chatbot/prompts/`)
 
-LLM prompt templates as markdown files, loaded by workflow nodes.
+LLM prompt templates as markdown files. Component modules (`retriever.py`, `college_reranker.py`, `suggestion_generator.py`, `clarification_generator.py`) load them via `load_prompt` in `chatbot/utils/prompt_loader.py`. Workflow nodes call these components rather than loading prompts directly.
 
 ### Data (`data/`)
 
 - `data/chatbot/peterson_data.json` — 31MB raw college dataset (1,500+ colleges)
-- `data/chatbot/peterson_rag_documents/` — 1,528 markdown files used for vectorization
+- `data/chatbot/peterson_rag_documents/` — 1,526 markdown files used for vectorization
 - `data/chroma-peterson/` — Persistent ChromaDB vector store (embedding model: `all-MiniLM-L6-v2`)
 - `data/scripts/` — Data collection/processing scripts
 
